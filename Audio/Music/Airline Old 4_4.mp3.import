@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://insr3sfusi4l"
+path="res://.godot/imported/Airline Old 4_4.mp3-bb65296973cf0d0ecd390dc8f3a2a306.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Airline Old 4_4.mp3"
+dest_files=["res://.godot/imported/Airline Old 4_4.mp3-bb65296973cf0d0ecd390dc8f3a2a306.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

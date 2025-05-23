@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbecx1t3fy27e"
+path="res://.godot/imported/UI Interaction.mp3-bbb50875592c0f937ced6b698a657d68.mp3str"
+
+[deps]
+
+source_file="res://Audio/Sound Effect/UI Interaction.mp3"
+dest_files=["res://.godot/imported/UI Interaction.mp3-bbb50875592c0f937ced6b698a657d68.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

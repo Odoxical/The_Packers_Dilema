@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://j5h70rvyulyy"
+path="res://.godot/imported/Big Door Open.mp3-629ad67ac66345c373d7a3b8486ccf1c.mp3str"
+
+[deps]
+
+source_file="res://Audio/Sound Effect/Big Door Open.mp3"
+dest_files=["res://.godot/imported/Big Door Open.mp3-629ad67ac66345c373d7a3b8486ccf1c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
