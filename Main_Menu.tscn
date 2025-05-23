@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dq3rfb8hmgybx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Exit" type="Button" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -41.0
+offset_top = -50.0
+offset_right = 42.0
+offset_bottom = -19.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+text = "Clock Out"
+
+[node name="Start" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.5
+offset_top = -15.5
+offset_right = 34.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+text = "Clock In"
+metadata/_edit_use_anchors_ = true
+
+[node name="Settings" type="Button" parent="."]
+offset_left = -56.0
+offset_top = 24.0
+offset_right = 59.0
+offset_bottom = 55.0
+size_flags_vertical = 3
+text = "Configuration"
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
