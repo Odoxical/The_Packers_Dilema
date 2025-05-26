@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://dq3rfb8hmgybx"]
+[gd_scene load_steps=2 format=3 uid="uid://dq3rfb8hmgybx"]
+
+[ext_resource type="Script" uid="uid://clwh2t8yulynv" path="res://main_menu.gd" id="1_m625n"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_m625n")
 
 [node name="Exit" type="Button" parent="."]
 anchors_preset = 12
@@ -42,3 +45,7 @@ text = "Configuration"
 metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]

@@ -12,21 +12,53 @@ offset_bottom = 647.0
 text = "Go Back to Main Menu"
 
 [node name="Buttonsize" type="HSlider" parent="."]
-offset_left = 344.0
-offset_top = 496.0
-offset_right = 512.0
-offset_bottom = 512.0
+visibility_layer = 2
+offset_left = 944.0
+offset_top = 56.0
+offset_right = 1112.0
+offset_bottom = 72.0
+max_value = 5.0
+tick_count = 10
+ticks_on_borders = true
 
-[node name="TextEdit" type="TextEdit" parent="."]
-offset_left = 328.0
-offset_top = 448.0
-offset_right = 544.0
-offset_bottom = 488.0
+[node name="Slider Label size" type="TextEdit" parent="Buttonsize"]
+offset_left = -16.0
+offset_top = -48.0
+offset_right = 200.0
+offset_bottom = -8.0
 text = "Slider Visability button size"
 
 [node name="SliderVisibility" type="Button" parent="."]
-offset_left = 568.0
-offset_top = 384.0
-offset_right = 694.0
-offset_bottom = 448.0
+offset_top = 8.0
+offset_right = 126.0
+offset_bottom = 72.0
 text = "Slider Visability"
+
+[node name="Main text" type="TextEdit" parent="."]
+offset_left = 448.0
+offset_top = 248.0
+offset_right = 1024.0
+offset_bottom = 448.0
+text = "This area is under coding"
+scroll_smooth = true
+
+[node name="Main Text Y" type="VSlider" parent="."]
+offset_left = 128.0
+offset_top = 256.0
+offset_right = 176.0
+offset_bottom = 440.0
+tick_count = 15
+ticks_on_borders = true
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 88.0
+offset_top = 192.0
+offset_right = 232.0
+offset_bottom = 256.0
+text = "Under Coding Y
+Value Slider"
+
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="drag_ended" from="Buttonsize" to="." method="_on_buttonsize_drag_ended"]
+[connection signal="pressed" from="SliderVisibility" to="." method="_on_slider_visibility_pressed"]
+[connection signal="drag_started" from="Main Text Y" to="." method="_on_font_size_slider_drag_started"]
