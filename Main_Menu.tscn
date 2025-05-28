@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://dq3rfb8hmgybx"]
+[gd_scene load_steps=7 format=3 uid="uid://dq3rfb8hmgybx"]
 
-[ext_resource type="Script" uid="uid://c6qsg8mkguwet" path="res://main_menu.gd" id="1_m625n"]
+[ext_resource type="Script" uid="uid://c6qsg8mkguwet" path="res://Main_Menu.gd" id="1_m625n"]
+[ext_resource type="FontFile" uid="uid://clsaarat6uhm3" path="res://pixeloid.mono.otf" id="2_wugcc"]
+[ext_resource type="Texture2D" uid="uid://buha5iu05owwt" path="res://Ui/UI_box_Old_1.png" id="3_gtid3"]
+
+[sub_resource type="Theme" id="Theme_gtid3"]
+default_font = ExtResource("2_wugcc")
+
+[sub_resource type="Theme" id="Theme_dnfjo"]
+default_font = ExtResource("2_wugcc")
+
+[sub_resource type="Theme" id="Theme_257up"]
+default_font = ExtResource("2_wugcc")
+default_font_size = 235
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_m625n")
@@ -17,6 +29,7 @@ offset_bottom = -19.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 3
+theme = SubResource("Theme_gtid3")
 text = "Clock Out"
 
 [node name="Start" type="Button" parent="."]
@@ -32,20 +45,38 @@ offset_bottom = 15.5
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
+theme = SubResource("Theme_dnfjo")
 text = "Clock In"
-metadata/_edit_use_anchors_ = true
-
-[node name="Settings" type="Button" parent="."]
-offset_left = -56.0
-offset_top = 24.0
-offset_right = 59.0
-offset_bottom = 55.0
-size_flags_vertical = 3
-text = "Configuration"
 metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
+[node name="UiBoxOld1" type="Sprite2D" parent="."]
+position = Vector2(24, 81)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_gtid3")
+
+[node name="Settings" type="TextureButton" parent="UiBoxOld1"]
+anchors_preset = -1
+anchor_right = 2.20625
+anchor_bottom = 2.05
+offset_left = -400.0
+offset_top = -97.0
+offset_right = 187.0
+offset_bottom = 41.0
+scale = Vector2(0.25, 0.25)
+metadata/_edit_use_anchors_ = true
+
+[node name="Settingstext" type="TextEdit" parent="UiBoxOld1/Settings"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 100.0
+offset_right = 2240.0
+offset_bottom = 404.0
+theme = SubResource("Theme_257up")
+text = "Configuration"
+metadata/_edit_use_anchors_ = true
+
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="UiBoxOld1/Settings" to="." method="_on_settings_pressed"]
