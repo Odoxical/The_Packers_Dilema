@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://dt5dw20rkhfqf"]
+[gd_scene load_steps=2 format=3 uid="uid://dt5dw20rkhfqf"]
+
+[ext_resource type="PackedScene" uid="uid://bjnxh01hmul6w" path="res://Models/Carbord Box.glb" id="1_lnxrc"]
 
 [node name="Node3D" type="Node3D"]
+
+[node name="Carbord Box" parent="." instance=ExtResource("1_lnxrc")]

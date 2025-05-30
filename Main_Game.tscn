@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ymx05lfxcihv"]
+[gd_scene load_steps=4 format=3 uid="uid://ymx05lfxcihv"]
 
 [ext_resource type="Script" uid="uid://b1f4ia7wc6e52" path="res://main_game.gd" id="1_ljyvl"]
 [ext_resource type="PackedScene" uid="uid://d0odmrq5dj3kp" path="res://Models/Warehouse.glb" id="2_lxoxe"]
+[ext_resource type="MeshLibrary" uid="uid://b4271nrxb38lf" path="res://Box patterns/Boxes.tres" id="3_aw5v0"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_ljyvl")
@@ -10,3 +11,9 @@ script = ExtResource("1_ljyvl")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.3263, 1.05452, 0.189089)
 
 [node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("3_aw5v0")
+cell_size = Vector3(0.3, 0.225, 0.225)
+data = {
+"cells": PackedInt32Array(65535, 65531, 524288, 65535, 65534, 524288, 65535, 65535, 524288, 65535, 0, 524288, 65535, 1, 524288, 131071, 65534, 524288, 131071, 65531, 524288, 196607, 65534, 524288, 196607, 65535, 524288, 196607, 0, 524288, 196607, 1, 524288, 196607, 65531, 524288, 262143, 65534, 524288, 262143, 65531, 524288, 327679, 65534, 524288, 327679, 65535, 524288, 327679, 0, 524288, 327679, 1, 524288, 327679, 65531, 524288, 327679, 65532, 524288, 327679, 65530, 524288, 327679, 3, 524288, 327679, 4, 524288, 327679, 5, 524288, 327679, 6, 524288, 262143, 3, 524288, 196607, 6, 524288, 196607, 5, 524288, 196607, 4, 524288, 196607, 3, 524288, 131071, 6, 524288, 65535, 6, 524288, 65535, 5, 524288, 65535, 4, 524288, 65535, 3, 524288, 65535, 9, 524288, 131071, 9, 524288, 196607, 9, 524288, 262143, 9, 524288, 327679, 9, 524288, 327679, 8, 524288, 327679, 10, 524288)
+}
+metadata/_editor_floor_ = Vector3(0, 4, 0)
