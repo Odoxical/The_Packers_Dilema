@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cjijluavjp7lh"]
+
+[ext_resource type="FontFile" uid="uid://clsaarat6uhm3" path="res://pixeloid.mono.otf" id="1_mbchq"]
+
+[resource]
+default_font = ExtResource("1_mbchq")
+default_font_size = 50
