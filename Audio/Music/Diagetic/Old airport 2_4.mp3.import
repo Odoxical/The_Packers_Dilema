@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfuhloo58q55k"
+path="res://.godot/imported/Old airport 2_4.mp3-ab0f1e41068efaabef0741e28d185b2a.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Diagetic/Old airport 2_4.mp3"
+dest_files=["res://.godot/imported/Old airport 2_4.mp3-ab0f1e41068efaabef0741e28d185b2a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

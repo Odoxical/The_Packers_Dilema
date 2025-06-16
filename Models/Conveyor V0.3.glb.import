@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bjnxh01hmul6w"
-path="res://.godot/imported/Carbord Box.glb-09d9a92d0b326bc83b0e29c4507a71d5.scn"
+uid="uid://tkxcijhkgs2f"
+path="res://.godot/imported/Conveyor V0.3.glb-fcb6eea77b84b61917aa6d0dae37b3a4.scn"
 
 [deps]
 
-source_file="res://Models/Carbord Box.glb"
-dest_files=["res://.godot/imported/Carbord Box.glb-09d9a92d0b326bc83b0e29c4507a71d5.scn"]
+source_file="res://Models/Conveyor V0.3.glb"
+dest_files=["res://.godot/imported/Conveyor V0.3.glb-fcb6eea77b84b61917aa6d0dae37b3a4.scn"]
 
 [params]
 
@@ -32,12 +32,6 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"nodes": {
-"PATH:Cube": {
-"generate/physics": true
-}
-}
-}
+_subresources={}
 gltf/naming_version=1
 gltf/embedded_image_handling=1

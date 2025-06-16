@@ -59,7 +59,15 @@ offset_bottom = 256.0
 text = "Under Coding Y
 Value Slider"
 
+[node name="Music" type="Button" parent="."]
+offset_left = 476.0
+offset_top = 61.0
+offset_right = 602.0
+offset_bottom = 120.0
+text = "Go To Music"
+
 [connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="drag_ended" from="Buttonsize" to="." method="_on_buttonsize_drag_ended"]
 [connection signal="pressed" from="SliderVisibility" to="." method="_on_slider_visibility_pressed"]
 [connection signal="drag_started" from="Main Text Y" to="." method="_on_font_size_slider_drag_started"]
+[connection signal="pressed" from="Music" to="." method="_on_music_pressed"]
