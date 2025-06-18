@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://2rvq37a724nv"]
+[gd_scene load_steps=6 format=4 uid="uid://7lfnco06ng31"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2skw"]
 resource_name = "Material"
@@ -12,7 +12,7 @@ cull_mode = 2
 albedo_color = Color(0.683534, 0.683534, 0.683534, 1)
 roughness = 0.5
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_h5gsm"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_p1p3r"]
 _surfaces = [{
 "aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
 "format": 34896613377,
@@ -36,7 +36,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_v1ty2"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_gpfhr"]
 resource_name = "CubeBox_Cube_004"
 _surfaces = [{
 "aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
@@ -64,15 +64,32 @@ _surfaces = [{
 "vertex_data": PackedByteArray("/////wAA//8AAP///v///wAA//8AAP////////////8AAAAAAAD/v///AAD+//+///8AAAAA/78AAAAA////v///AAAAAFTV////////VNX/////AABU1f//AAD+/1TVAAAAAP//VNUAAP//AABU1QAA///+/1TVAAAAAAAAVNX/f/+//3//v/9//7//f/+/AAD/fwAA/38AAP9/AAD/f6oqqiqqKqoqqiqqKqoqqipU1VTVVNVU1VTVVNVU1VTV")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_h5gsm")
+shadow_mesh = SubResource("ArrayMesh_p1p3r")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_h5gsm"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_3yrxk"]
+size = Vector3(2, 2, 1)
 
-[node name="PlainBox" type="CharacterBody3D"]
+[node name="CharacterBody3D" type="CharacterBody3D"]
+
+[node name="Cube4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
 
 [node name="Cube" type="MeshInstance3D" parent="."]
-mesh = SubResource("ArrayMesh_v1ty2")
+mesh = SubResource("ArrayMesh_gpfhr")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_h5gsm")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0)
+shape = SubResource("BoxShape3D_3yrxk")

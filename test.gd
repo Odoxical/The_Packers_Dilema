@@ -34,17 +34,21 @@ func snap_to_nearest_axis(vector: Vector3) -> Vector3: #This all is to stop diag
 	else:
 		return Vector3(0, 0, sign(vector.z))
 
-func _process(delta):
+func _process(delta): 
 	if current_box and not moving:
-		direction = -V2toV3(Input.get_vector("Move Left","Move Right","Move Up","Move Down")) #If you press a directional Key
+		direction = -V2toV3(Input.get_vector("Move Right","Move Left","Move Up","Move Down")) #If you press a directional Key
 		direction = snap_to_nearest_axis(direction) #Than the direction to move is in this direction
 		
 		target_position = current_box.position + direction 
 		moving = true #Box is moving
+	if Input.is_action_just_pressed("Stop Box Moving"):
+		print("Hello")
+		get_tree().get_root().add_child("res://Scenes/Square Box")
+		
 
 			
 	if moving:
-		print("Moving box from", current_box.position, " to ", target_position) #Test Cide
+		print("Moving box from", current_box.position, " to ", target_position) #Testing
 		current_box.position = current_box.position.move_toward(target_position, 3* delta) #Makes the boxes current position move towards the target in small increments
 		if current_box.position == target_position: #If the box has reahed the posiston we want
 			moving = false #Than stop the box from moving
