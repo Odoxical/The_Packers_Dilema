@@ -7,6 +7,9 @@ var current_box : CharacterBody3D
 var target_position : Vector3
 var moving =  false
 var direction = Vector3.ZERO
+var new_box = load("res://Scenes/Square Box.tscn").instantiate
+var box_scene = load("res://Scenes/Square Box.tscn")
+
 func _ready():
 	call_deferred("setup")
 
@@ -35,15 +38,15 @@ func snap_to_nearest_axis(vector: Vector3) -> Vector3: #This all is to stop diag
 		return Vector3(0, 0, sign(vector.z))
 
 func _process(delta): 
+	print("box_scene: ", box_scene)
 	if current_box and not moving:
 		direction = -V2toV3(Input.get_vector("Move Right","Move Left","Move Up","Move Down")) #If you press a directional Key
 		direction = snap_to_nearest_axis(direction) #Than the direction to move is in this direction
-		
 		target_position = current_box.position + direction 
 		moving = true #Box is moving
 	if Input.is_action_just_pressed("Stop Box Moving"):
 		print("Hello")
-		get_tree().get_root().add_child("res://Scenes/Square Box")
+		get_tree().get_root().add_child(new_box)
 		
 
 			

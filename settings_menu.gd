@@ -27,4 +27,4 @@ func _on_font_size_slider_drag_started() -> void:
 	$"Main text".Vector2($"Font Size Slider".value,0)
 
 func _on_music_pressed():
-	music_player.play
+	get_tree().music_player.play
