@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhebjatgaboae"
+path="res://.godot/imported/Airport4- Non Dia.mp3-bd35323d2a4c907af9e8152a332d5ec6.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Non-Diagetic/Airport4- Non Dia.mp3"
+dest_files=["res://.godot/imported/Airport4- Non Dia.mp3-bd35323d2a4c907af9e8152a332d5ec6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
