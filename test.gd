@@ -7,8 +7,7 @@ var current_box : CharacterBody3D
 var target_position : Vector3
 var moving =  false
 var direction = Vector3.ZERO
-var new_box = load("res://Scenes/Square Box.tscn").instantiate
-var box_scene = load("res://Scenes/Square Box.tscn")
+var box_scene = load("res://Scenes/Boxes.tscn")
 
 func _ready():
 	call_deferred("setup")
@@ -37,16 +36,26 @@ func snap_to_nearest_axis(vector: Vector3) -> Vector3: #This all is to stop diag
 	else:
 		return Vector3(0, 0, sign(vector.z))
 
-func _process(delta): 
-	print("box_scene: ", box_scene)
-	if current_box and not moving:
-		direction = -V2toV3(Input.get_vector("Move Right","Move Left","Move Up","Move Down")) #If you press a directional Key
-		direction = snap_to_nearest_axis(direction) #Than the direction to move is in this direction
-		target_position = current_box.position + direction 
-		moving = true #Box is moving
+var boxes_scene = load("res://Scenes/boxes.tscn")
+
+func _process(delta):
 	if Input.is_action_just_pressed("Stop Box Moving"):
-		print("Hello")
-		get_tree().get_root().add_child(new_box)
+		# Instantiate the boxes scene (just to access its children)
+		var boxes_instance = boxes_scene.instantiate()
+		# Get all children (assumed to be different box scenes as nodes)
+		var box_templates = []
+		for child in boxes_instance.get_children():
+			box_templates.append(child.duplicate())
+		
+		if box_templates.size() > 0:
+			# Pick a random box
+			var selected_box = box_templates[randi() % box_templates.size()]
+			# Add to main scene
+			get_tree().get_root().add_child(selected_box)
+			selected_box.global_position = Vector3(0, 2, -2)
+			current_box = selected_box
+			print(selected_box)
+			moving = false
 		
 
 			
