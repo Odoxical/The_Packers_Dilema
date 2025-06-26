@@ -14,8 +14,12 @@ func _ready():
 
 	
 func setup():
-	current_box = ray.get_collider()
-	print(current_box)
+	var collider = ray.get_collider()
+	if collider is CharacterBody3D:
+		current_box = collider
+	else:
+		print("No CharacterBody3D hit by raycast")
+		print(current_box)
 
 func V2toV3(vector):
 	return Vector3(vector.x,vector.y,0)
@@ -39,6 +43,26 @@ func snap_to_nearest_axis(vector: Vector3) -> Vector3: #This all is to stop diag
 var boxes_scene = load("res://Scenes/boxes.tscn")
 
 func _process(delta):
+	if current_box and not moving:
+		# Get input for all three axes
+		var input_x = Input.get_axis("Move Left", "Move Right")
+		var input_y = Input.get_axis("Move Up", "Move Down")
+		var input_z = Input.get_axis("Move Forward", "Move Backward")
+		
+		# Construct a 3D direction vector
+		direction = Vector3(input_x, input_y, input_z).normalized() #If you press a directional Key
+		direction = snap_to_nearest_axis(direction) #Than the direction to move is in this direction
+		
+		target_position = current_box.position + direction 
+		moving = true #Box is moving
+
+			
+	if moving:
+		print("Moving box from", current_box.position, " to ", target_position) #Test Cide
+		current_box.position = current_box.position.move_toward(target_position, 3* delta) #Makes the boxes current position move towards the target in small increments
+		if current_box.position == target_position: #If the box has reahed the posiston we want
+			moving = false #Than stop the box from moving
+	
 	if Input.is_action_just_pressed("Stop Box Moving"):
 		# Instantiate the boxes scene (just to access its children)
 		var boxes_instance = boxes_scene.instantiate()
@@ -53,12 +77,13 @@ func _process(delta):
 			# Add to main scene
 			get_tree().get_root().add_child(selected_box)
 			selected_box.global_position = Vector3(0, 2, -2)
-			current_box = selected_box
+			# Get the CharacterBody3D child node (assuming it's named "CharacterBody3D")
+			current_box = selected_box.get_node("CharacterBody3D") as CharacterBody3D
 			print(selected_box)
 			moving = false
-		
 
-			
+
+
 	if moving:
 		print("Moving box from", current_box.position, " to ", target_position) #Testing
 		current_box.position = current_box.position.move_toward(target_position, 3* delta) #Makes the boxes current position move towards the target in small increments
