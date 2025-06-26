@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://b0d77wghqt8ei"]
+[gd_scene load_steps=16 format=4 uid="uid://b0d77wghqt8ei"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bk8u0"]
 
@@ -80,9 +80,25 @@ size = Vector3(1, 2, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_6j8a3"]
 size = Vector3(3, 1, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_qv67g"]
+size = Vector3(1, 3, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ymfn8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2xuxg"]
+size = Vector3(1, 4, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wtrsm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h53m0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ih3t6"]
+size = Vector3(1, 1, 2)
+
 [node name="Box Templates" type="Node3D"]
 
 [node name="L Box" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -1, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="L Box"]
 
@@ -114,7 +130,7 @@ mesh = SubResource("ArrayMesh_gpfhr")
 skeleton = NodePath("")
 
 [node name="Square Box" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="Square Box"]
 
@@ -142,6 +158,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0)
 shape = SubResource("BoxShape3D_3yrxk")
 
 [node name="T box" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="T box"]
 
@@ -175,5 +192,101 @@ skeleton = NodePath("")
 
 [node name="Cube8" type="MeshInstance3D" parent="T box/CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Iron Golem" type="Node3D" parent="."]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Iron Golem"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Iron Golem/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_qv67g")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Iron Golem/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0)
+shape = SubResource("BoxShape3D_ymfn8")
+
+[node name="Cube4" type="MeshInstance3D" parent="Iron Golem/CharacterBody3D"]
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube5" type="MeshInstance3D" parent="Iron Golem/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube6" type="MeshInstance3D" parent="Iron Golem/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube7" type="MeshInstance3D" parent="Iron Golem/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="l Box" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="l Box"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="l Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_2xuxg")
+
+[node name="Cube4" type="MeshInstance3D" parent="l Box/CharacterBody3D"]
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube5" type="MeshInstance3D" parent="l Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube6" type="MeshInstance3D" parent="l Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube7" type="MeshInstance3D" parent="l Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Axis Box" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -1, 0)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Axis Box"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Axis Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+shape = SubResource("BoxShape3D_wtrsm")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Axis Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_h53m0")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Axis Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
+shape = SubResource("BoxShape3D_ih3t6")
+
+[node name="Cube4" type="MeshInstance3D" parent="Axis Box/CharacterBody3D"]
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube5" type="MeshInstance3D" parent="Axis Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube6" type="MeshInstance3D" parent="Axis Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
+[node name="Cube7" type="MeshInstance3D" parent="Axis Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
 mesh = SubResource("ArrayMesh_gpfhr")
 skeleton = NodePath("")

@@ -5,9 +5,12 @@ const RAY_LENGTH = 1000
 @onready var ray = $RayCast3D
 var current_box : CharacterBody3D
 var target_position : Vector3
+var target_rotation : Vector3
 var moving =  false
+var rotating = false
 var direction = Vector3.ZERO
 var box_scene = load("res://Scenes/Boxes.tscn")
+
 
 func _ready():
 	call_deferred("setup")
@@ -42,11 +45,21 @@ func snap_to_nearest_axis(vector: Vector3) -> Vector3: #This all is to stop diag
 
 var boxes_scene = load("res://Scenes/boxes.tscn")
 
+func smooth_rotate(axis: Vector3, angle: float): #Smooths rotation
+	if rotating == true:
+		return
+	else:
+		rotating = true
+		var tween = create_tween() #Starts a new tweening
+		var target_rotation = current_box.rotation + axis * angle
+		tween.tween_property(current_box, "rotation", target_rotation, 0.5).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT) #Selected node, What is changed?, how far you want to rotate, rotation speed, acell and decel curve speed.
+		tween.tween_callback(func():rotating = false)
+
 func _process(delta):
 	if current_box and not moving:
 		# Get input for all three axes
 		var input_x = Input.get_axis("Move Left", "Move Right")
-		var input_y = Input.get_axis("Move Up", "Move Down")
+		var input_y = Input.get_axis("Move Down","Move Up")
 		var input_z = Input.get_axis("Move Forward", "Move Backward")
 		
 		# Construct a 3D direction vector
@@ -55,8 +68,17 @@ func _process(delta):
 		
 		target_position = current_box.position + direction 
 		moving = true #Box is moving
-
-			
+		
+		var rotationangle = deg_to_rad(90)
+		
+		if rotating == false:
+			if Input.is_action_just_pressed("Rotate X"):
+				smooth_rotate(Vector3(1, 0, 0), rotationangle)
+			if Input.is_action_just_pressed("Rotate Y"):
+				smooth_rotate(Vector3(0, 1, 0), rotationangle)
+			if Input.is_action_just_pressed("Rotate Z"):
+				smooth_rotate(Vector3(0, 0, 1), rotationangle)
+		
 	if moving:
 		print("Moving box from", current_box.position, " to ", target_position) #Test Cide
 		current_box.position = current_box.position.move_toward(target_position, 3* delta) #Makes the boxes current position move towards the target in small increments
