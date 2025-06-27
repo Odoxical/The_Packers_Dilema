@@ -134,6 +134,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="Square Box"]
 
+[node name="Area3D" type="Area3D" parent="Square Box/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Square Box/CharacterBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.5, 0)
+shape = SubResource("BoxShape3D_3yrxk")
+
 [node name="Cube4" type="MeshInstance3D" parent="Square Box/CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0)
 mesh = SubResource("ArrayMesh_gpfhr")
@@ -144,31 +151,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
 mesh = SubResource("ArrayMesh_gpfhr")
 skeleton = NodePath("")
 
+[node name="Cube" type="MeshInstance3D" parent="Square Box/CharacterBody3D"]
+mesh = SubResource("ArrayMesh_gpfhr")
+skeleton = NodePath("")
+
 [node name="Cube2" type="MeshInstance3D" parent="Square Box/CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 mesh = SubResource("ArrayMesh_gpfhr")
 skeleton = NodePath("")
 
-[node name="Cube" type="MeshInstance3D" parent="Square Box/CharacterBody3D"]
-mesh = SubResource("ArrayMesh_gpfhr")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Square Box/CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0)
-shape = SubResource("BoxShape3D_3yrxk")
-
 [node name="T box" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="T box"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="T box/CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, 0)
-shape = SubResource("BoxShape3D_ei3si")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="T box/CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 0)
-shape = SubResource("BoxShape3D_6j8a3")
 
 [node name="Cube4" type="MeshInstance3D" parent="T box/CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
@@ -194,6 +189,16 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 0)
 mesh = SubResource("ArrayMesh_gpfhr")
 skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="T box/CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="T box/CharacterBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, 0)
+shape = SubResource("BoxShape3D_ei3si")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="T box/CharacterBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 0)
+shape = SubResource("BoxShape3D_6j8a3")
 
 [node name="Iron Golem" type="Node3D" parent="."]
 

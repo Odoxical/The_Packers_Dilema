@@ -30,7 +30,6 @@ func V2toV3(vector):
 func snap_to_nearest_axis(vector: Vector3) -> Vector3: #This all is to stop diagonal Movement
 	if vector == Vector3.ZERO:
 		return Vector3.ZERO
-	
 	var abs_x = abs(vector.x)
 	var abs_y = abs(vector.y)
 	var abs_z = abs(vector.z)
@@ -42,8 +41,6 @@ func snap_to_nearest_axis(vector: Vector3) -> Vector3: #This all is to stop diag
 		return Vector3(0, sign(vector.y), 0)
 	else:
 		return Vector3(0, 0, sign(vector.z))
-
-var boxes_scene = load("res://Scenes/boxes.tscn")
 
 func smooth_rotate(axis: Vector3, angle: float): #Smooths rotation
 	if rotating == true:
@@ -87,7 +84,7 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("Stop Box Moving"):
 		# Instantiate the boxes scene (just to access its children)
-		var boxes_instance = boxes_scene.instantiate()
+		var boxes_instance = box_scene.instantiate()
 		# Get all children (assumed to be different box scenes as nodes)
 		var box_templates = []
 		for child in boxes_instance.get_children():
