@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ymx05lfxcihv"]
+[gd_scene load_steps=7 format=3 uid="uid://ymx05lfxcihv"]
 
 [ext_resource type="Script" uid="uid://b1f4ia7wc6e52" path="res://main_game.gd" id="1_ljyvl"]
 [ext_resource type="PackedScene" uid="uid://d0odmrq5dj3kp" path="res://Models/Warehouse.glb" id="2_lxoxe"]
@@ -6,7 +6,6 @@
 [ext_resource type="Script" uid="uid://db2ut4dbdf287" path="res://timer.gd" id="4_24er3"]
 [ext_resource type="Script" uid="uid://dapc8jipi7x7w" path="res://grid_map.gd" id="4_f2i40"]
 [ext_resource type="Script" uid="uid://dv5le7fqaiprk" path="res://test.gd" id="5_130gx"]
-[ext_resource type="PackedScene" uid="uid://2rvq37a724nv" path="res://Scenes/plain_box.tscn" id="7_130gx"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_ljyvl")
@@ -46,9 +45,6 @@ distance_fade_enabled = true
 spot_range = 24.4176
 spot_angle = 81.55
 spot_angle_attenuation = 3.605
-
-[node name="PlainBox" parent="." instance=ExtResource("7_130gx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -2)
 
 [node name="Box Container" type="Node" parent="."]
 
