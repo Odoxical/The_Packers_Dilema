@@ -1,25 +1,47 @@
 extends Camera3D
 
 @export var grid_size : int = 1
+@export var enable_collision_detection : bool = true  # Toggle for debugging
 const RAY_LENGTH = 1000
 @onready var ray = $RayCast3D
 var current_box : CharacterBody3D
+var current_area : Area3D  # Reference to the box's Area3D
 var target_position : Vector3
+var start_position : Vector3  # Store starting position for snap-back
 var target_rotation : Vector3
-var moving =  false
+var start_rotation : Vector3  # Store starting rotation for snap-back
+var moving = false
 var rotating = false
 var direction = Vector3.ZERO
 var box_scene = load("res://Scenes/Boxes.tscn")
 
-
 func _ready():
 	call_deferred("setup")
 
-	
 func setup():
 	var collider = ray.get_collider()
 	if collider is CharacterBody3D:
 		current_box = collider
+		print("Found CharacterBody3D: ", current_box)
+		# Try to find Area3D child
+		for child in current_box.get_children():
+			if child is Area3D:
+				current_area = child
+				print("Found Area3D: ", current_area)
+				break
+		
+		if not current_area:
+			print("No Area3D found in CharacterBody3D children")
+			# Try alternative names or paths
+			var area_candidates = ["Area3D", "Area", "CollisionArea"]
+			for candidate in area_candidates:
+				if current_box.has_node(candidate):
+					current_area = current_box.get_node(candidate) as Area3D
+					print("Found Area3D with name: ", candidate)
+					break
+		
+		if not current_area:
+			print("WARNING: No Area3D found - collision detection will be disabled")
 	else:
 		print("No CharacterBody3D hit by raycast")
 		print(current_box)
@@ -27,7 +49,7 @@ func setup():
 func V2toV3(vector):
 	return Vector3(vector.x,vector.y,0)
 
-func snap_to_nearest_axis(vector: Vector3) -> Vector3: #This all is to stop diagonal Movement
+func snap_to_nearest_axis(vector: Vector3) -> Vector3:
 	if vector == Vector3.ZERO:
 		return Vector3.ZERO
 	var abs_x = abs(vector.x)
@@ -42,172 +64,58 @@ func snap_to_nearest_axis(vector: Vector3) -> Vector3: #This all is to stop diag
 	else:
 		return Vector3(0, 0, sign(vector.z))
 
-# NEW COLLISION DETECTION FUNCTION - WITH MARGIN
-func check_collision_in_direction(direction: Vector3) -> bool:
-	if not current_box:
-		return false
-	
-	var space_state = get_world_3d().direct_space_state
-	
-	# Find the first CollisionShape3D in the current box
-	var collision_shape_node = null
-	for child in current_box.get_children():
-		if child is CollisionShape3D:
-			collision_shape_node = child
-			break
-	
-	if not collision_shape_node or not collision_shape_node.shape:
-		print("No CollisionShape3D found in current_box")
-		return false
-	
-	# Create shape query
-	var query = PhysicsShapeQueryParameters3D.new()
-	query.collision_mask = current_box.collision_mask
-	query.shape = collision_shape_node.shape
-	query.exclude = [current_box.get_rid()]  # Exclude current box from collision check
-	query.margin = 0.01  # Small margin to avoid touching-face collisions
-	
-	# Set the transform to the target position
-	query.transform = current_box.global_transform
-	query.transform.origin += direction
-	
-	# Check for intersections
-	var result = space_state.intersect_shape(query)
-	
-	if result.size() > 0:
-		print("Collision detected! Would hit: ", result[0].collider)
-		return true
-	
+func check_collision() -> bool:
+	# Check if current_area overlaps with any other areas
+	if current_area and current_area.has_overlapping_areas():
+		var overlapping_areas = current_area.get_overlapping_areas()
+		# Filter out self-overlapping (if the same box has multiple areas)
+		var valid_collisions = []
+		for area in overlapping_areas:
+			# Make sure we're not detecting collision with our own area or parent
+			if area != current_area and area.get_parent() != current_box:
+				valid_collisions.append(area)
+		
+		if valid_collisions.size() > 0:
+			print("Collision detected with: ", valid_collisions)
+			return true
 	return false
 
-# ALTERNATIVE: RAYCAST METHOD FOR TOUCHING FACES
-func check_collision_with_raycast(direction: Vector3) -> bool:
-	if not current_box:
-		return false
-	
-	var space_state = get_world_3d().direct_space_state
-	
-	# Cast a ray slightly ahead of the box
-	var ray_start = current_box.global_position
-	var ray_end = ray_start + direction * 1.1  # Slightly further than one grid unit
-	
-	var query = PhysicsRayQueryParameters3D.create(ray_start, ray_end)
-	query.exclude = [current_box.get_rid()]
-	query.collision_mask = current_box.collision_mask
-	
-	var result = space_state.intersect_ray(query)
-	
-	if result:
-		print("Ray collision detected! Would hit: ", result.collider)
-		return true
-	
-	return false
-
-# HYBRID APPROACH: SHAPE CAST WITH OFFSET
-func check_collision_with_offset(direction: Vector3) -> bool:
-	if not current_box:
-		return false
-	
-	var space_state = get_world_3d().direct_space_state
-	
-	# Find the first CollisionShape3D in the current box
-	var collision_shape_node = null
-	for child in current_box.get_children():
-		if child is CollisionShape3D:
-			collision_shape_node = child
-			break
-	
-	if not collision_shape_node or not collision_shape_node.shape:
-		print("No CollisionShape3D found in current_box")
-		return false
-	
-	# Create shape query with a small offset into the movement direction
-	var query = PhysicsShapeQueryParameters3D.new()
-	query.collision_mask = current_box.collision_mask
-	query.shape = collision_shape_node.shape
-	query.exclude = [current_box.get_rid()]
-	
-	# Move the shape slightly further than the target position
-	query.transform = current_box.global_transform
-	query.transform.origin += direction * 1.1  # 10% further than intended movement
-	
-	# Check for intersections
-	var result = space_state.intersect_shape(query)
-	
-	if result.size() > 0:
-		print("Collision detected! Would hit: ", result[0].collider)
-		return true
-	
-	return false
-
-# ENHANCED COLLISION DETECTION FOR MULTIPLE COLLISION SHAPES
-func check_collision_all_shapes(direction: Vector3) -> bool:
-	if not current_box:
-		return false
-	
-	var space_state = get_world_3d().direct_space_state
-	
-	# Check all CollisionShape3D children
-	for child in current_box.get_children():
-		if child is CollisionShape3D and child.shape:
-			var query = PhysicsShapeQueryParameters3D.new()
-			query.collision_mask = current_box.collision_mask
-			query.shape = child.shape
-			query.exclude = [current_box.get_rid()]
-			
-			# Account for the child's local transform
-			var child_transform = current_box.global_transform * child.transform
-			query.transform = child_transform
-			query.transform.origin += direction
-			
-			var result = space_state.intersect_shape(query)
-			if result.size() > 0:
-				print("Collision detected with shape: ", child.name, " would hit: ", result[0].collider)
-				return true
-	
-	return false
-
-func smooth_rotate(axis: Vector3, angle: float): #Smooths rotation
+func smooth_rotate(axis: Vector3, angle: float):
 	if rotating == true:
 		return
 	else:
 		rotating = true
-		var tween = create_tween() #Starts a new tweening
+		start_rotation = current_box.rotation  # Store starting rotation
+		print("Starting rotation from: ", start_rotation)
+		var tween = create_tween()
 		var target_rotation = current_box.rotation + axis * angle
-		tween.tween_property(current_box, "rotation", target_rotation, 0.5).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT) #Selected node, What is changed?, how far you want to rotate, rotation speed, acell and decel curve speed.
-		tween.tween_callback(func():rotating = false)
+		tween.tween_property(current_box, "rotation", target_rotation, 0.5).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT)
+		tween.tween_callback(func():
+			print("Rotation completed, checking collision...")
+			# Check for collision after rotation completes
+			if enable_collision_detection and check_collision():
+				print("Rotation collision detected! Snapping back to start rotation")
+				current_box.rotation = start_rotation
+			else:
+				print("No rotation collision detected")
+			rotating = false
+		)
 
 func _process(delta):
-	if current_box and not moving:
+	if current_box and current_area and not moving:
 		# Get input for all three axes
 		var input_x = Input.get_axis("Move Left", "Move Right")
 		var input_y = Input.get_axis("Move Down","Move Up")
 		var input_z = Input.get_axis("Move Forward", "Move Backward")
 		
 		# Construct a 3D direction vector
-		direction = Vector3(input_x, input_y, input_z).normalized() #If you press a directional Key
-		direction = snap_to_nearest_axis(direction) #Than the direction to move is in this direction
+		direction = Vector3(input_x, input_y, input_z).normalized()
+		direction = snap_to_nearest_axis(direction)
 		
-		# CHECK FOR COLLISION BEFORE MOVING
-		if direction != Vector3.ZERO:
-			# Choose which collision detection method to use:
-			# Option 1: Shape cast with margin (good for most cases)
-			var collision_detected = check_collision_in_direction(direction)
-			
-			# Option 2: Raycast method (allows touching faces to slide)
-			# var collision_detected = check_collision_with_raycast(direction)
-			
-			# Option 3: Shape cast with offset (more precise than margin)
-			# var collision_detected = check_collision_with_offset(direction)
-			
-			# Option 4: Multiple collision shapes (more thorough)
-			# var collision_detected = check_collision_all_shapes(direction)
-			
-			if not collision_detected:
-				target_position = current_box.position + direction 
-				moving = true #Box is moving
-			else:
-				print("Movement blocked by collision!")
+		if direction != Vector3.ZERO:  # Only move if there's input
+			start_position = current_box.position  # Store starting position
+			target_position = current_box.position + direction 
+			moving = true
 		
 		var rotationangle = deg_to_rad(90)
 		
@@ -218,12 +126,13 @@ func _process(delta):
 				smooth_rotate(Vector3(0, 1, 0), rotationangle)
 			if Input.is_action_just_pressed("Rotate Z"):
 				smooth_rotate(Vector3(0, 0, 1), rotationangle)
-		
+	
 	if moving:
-		print("Moving box from", current_box.position, " to ", target_position) #Test Code
-		current_box.position = current_box.position.move_toward(target_position, 3* delta) #Makes the boxes current position move towards the target in small increments
-		if current_box.position == target_position: #If the box has reahed the posiston we want
-			moving = false #Than stop the box from moving
+		print("Moving box from", current_box.position, " to ", target_position)
+		current_box.position = current_box.position.move_toward(target_position, 3* delta)
+		
+		if current_box.position == target_position:
+			moving = false
 	
 	if Input.is_action_just_pressed("Stop Box Moving"):
 		# Instantiate the boxes scene (just to access its children)
@@ -240,19 +149,59 @@ func _process(delta):
 			get_tree().get_root().add_child(selected_box)
 			selected_box.global_position = Vector3(0, 2, -2)
 			selected_box.reparent($"../Box Container")
-			# Get the node
-			current_box = selected_box.get_node("CharacterBody3D") as CharacterBody3D
-			print(selected_box)
+			
+			# Debug: Print the structure of the spawned box
+			print("Spawned box structure:")
+			print("Selected box: ", selected_box)
+			print("Children of selected box:")
+			for child in selected_box.get_children():
+				print("  - ", child.name, " (", child.get_class(), ")")
+				for grandchild in child.get_children():
+					print("    - ", grandchild.name, " (", grandchild.get_class(), ")")
+			
+			# Try to find CharacterBody3D - it might be the selected_box itself or a child
+			if selected_box is CharacterBody3D:
+				current_box = selected_box
+			else:
+				current_box = selected_box.get_node("CharacterBody3D") as CharacterBody3D
+			
+			if current_box:
+				print("Found CharacterBody3D: ", current_box)
+				# Try to find Area3D child
+				for child in current_box.get_children():
+					if child is Area3D:
+						current_area = child
+						print("Found Area3D: ", current_area)
+						break
+				
+				if not current_area:
+					print("No Area3D found in CharacterBody3D children")
+					# Try alternative names or paths
+					var area_candidates = ["Area3D", "Area", "CollisionArea"]
+					for candidate in area_candidates:
+						if current_box.has_node(candidate):
+							current_area = current_box.get_node(candidate) as Area3D
+							print("Found Area3D with name: ", candidate)
+							break
+			else:
+				print("No CharacterBody3D found in spawned box")
+			
+			print("Final current_box: ", current_box)
+			print("Final current_area: ", current_area)
 			moving = false
 
-
-
-	if moving:
-		print("Moving box from", current_box.position, " to ", target_position) #Testing
-		current_box.position = current_box.position.move_toward(target_position, 3* delta) #Makes the boxes current position move towards the target in small increments
-		if current_box.position == target_position: #If the box has reahed the posiston we want
-			moving = false #Than stop the box from moving
-
 func _physics_process(delta):
+	# Handle collision detection in physics process where Area3D updates are current
+	if moving and enable_collision_detection:
+		print("Checking collision during movement...")
+		if check_collision():
+			print("Collision detected! Snapping back to start position")
+			current_box.position = start_position
+			moving = false
+		else:
+			print("No collision during movement")
+	
 	var space_state = get_world_3d().direct_space_state
 	var mousepos = get_viewport().get_mouse_position()
+
+	# Your existing physics process code...

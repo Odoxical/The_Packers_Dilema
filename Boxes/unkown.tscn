@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cau6af06ltiej"]
+
+[ext_resource type="PackedScene" uid="uid://dn7xgy5mj2b4y" path="res://Models/Tetronimos/LBlock.glb" id="1_o26ib"]
+
+[node name="LBlock" instance=ExtResource("1_o26ib")]
+
+[node name="Area3D" type="Area3D" parent="." index="2"]

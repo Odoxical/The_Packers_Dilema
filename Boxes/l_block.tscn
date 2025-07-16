@@ -1,6 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://b0d77wghqt8ei"]
-
-[ext_resource type="PackedScene" uid="uid://cdwuxgny43es8" path="res://Boxes/axis block.tscn" id="1_bk8u0"]
+[gd_scene load_steps=6 format=4 uid="uid://dk6y3q74mn7uv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bflq"]
 
@@ -40,24 +38,19 @@ points = PackedVector3Array(-0.4, -1.34737, -0.380092, 0.4, 1.34737, 0.377778, 0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_he2bk"]
 points = PackedVector3Array(0.4, 1.4, -0.470266, -0.4, 0.6, -1.3964, 0.4, 0.6, -1.3964, -0.4, 0.6, -0.470266, -0.4, 1.4, -1.3964, 0.4, 0.6, -0.470266, -0.4, 1.4, -0.470266, 0.4, 1.4, -1.3964)
 
-[node name="Box Templates" type="Node3D"]
+[node name="L Cube" type="Node3D"]
 
-[node name="L Cube" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -1, 0)
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="L Cube"]
-
-[node name="LCube" type="MeshInstance3D" parent="L Cube/CharacterBody3D"]
+[node name="LCube" type="MeshInstance3D" parent="CharacterBody3D"]
 mesh = SubResource("ArrayMesh_cbpd7")
 skeleton = NodePath("")
 
-[node name="Detector" type="Area3D" parent="L Cube/CharacterBody3D"]
+[node name="Detector" type="Area3D" parent="CharacterBody3D"]
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="L Cube/CharacterBody3D/Detector"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="CharacterBody3D/Detector"]
 shape = SubResource("ConvexPolygonShape3D_r1vlx")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="L Cube/CharacterBody3D/Detector"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/Detector"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0555837, 0.0295181)
 shape = SubResource("ConvexPolygonShape3D_he2bk")
-
-[node name="Axis Cube" parent="." instance=ExtResource("1_bk8u0")]
