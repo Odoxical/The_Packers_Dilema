@@ -7,9 +7,10 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="Warehouse" parent="." instance=ExtResource("2_lxoxe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.3263, 1.05452, 0.189089)
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, -0.293756, 1.05452, -21.6606)
 
 [node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 mesh_library = ExtResource("3_aw5v0")
 cell_size = Vector3(0.3, 0.225, 0.225)
 collision_layer = 0
@@ -20,7 +21,7 @@ data = {
 metadata/_editor_floor_ = Vector3(0, 4, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, 1, 0.192255, 2.42242, 1.49184)
+transform = Transform3D(1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, 1, 0.192255, 2.42242, 0.49184)
 fov = 69.76
 script = ExtResource("5_130gx")
 
@@ -35,13 +36,13 @@ one_shot = true
 autostart = true
 
 [node name="Headlight" type="SpotLight3D" parent="."]
-transform = Transform3D(0.00601912, -0.99961, -0.0272827, 0.976518, 1.56782e-07, 0.215434, -0.21535, -0.0279388, 0.976137, -0.153164, 1.96214, 2.1095)
+transform = Transform3D(-0.0499227, -0.97278, 0.22629, 0.976518, 1.10186e-07, 0.215434, -0.20957, 0.231731, 0.949938, -0.153164, 1.96214, 0.1095)
 light_energy = 4.232
 shadow_enabled = true
 distance_fade_enabled = true
 spot_range = 24.4176
 spot_angle = 81.55
-spot_angle_attenuation = 3.605
+spot_angle_attenuation = 5.65684
 
 [node name="Box Container" type="Node" parent="."]
 

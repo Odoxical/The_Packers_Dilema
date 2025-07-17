@@ -12,6 +12,7 @@ var target_rotation : Vector3
 var start_rotation : Vector3  # Store starting rotation for snap-back
 var moving = false
 var rotating = false
+var rotation_tween : Tween  # Store reference to the rotation tween
 var direction = Vector3.ZERO
 var box_scene = load("res://Scenes/Boxes.tscn")
 
@@ -68,16 +69,23 @@ func check_collision() -> bool:
 	# Check if current_area overlaps with any other areas
 	if current_area and current_area.has_overlapping_areas():
 		var overlapping_areas = current_area.get_overlapping_areas()
+		print("All overlapping areas: ", overlapping_areas)
+		
 		# Filter out self-overlapping (if the same box has multiple areas)
 		var valid_collisions = []
 		for area in overlapping_areas:
 			# Make sure we're not detecting collision with our own area or parent
 			if area != current_area and area.get_parent() != current_box:
 				valid_collisions.append(area)
+				print("Valid collision with: ", area, " (parent: ", area.get_parent(), ")")
 		
 		if valid_collisions.size() > 0:
 			print("Collision detected with: ", valid_collisions)
 			return true
+		else:
+			print("No valid collisions found (only self-overlapping)")
+	else:
+		return false
 	return false
 
 func smooth_rotate(axis: Vector3, angle: float):
@@ -87,17 +95,35 @@ func smooth_rotate(axis: Vector3, angle: float):
 		rotating = true
 		start_rotation = current_box.rotation  # Store starting rotation
 		print("Starting rotation from: ", start_rotation)
-		var tween = create_tween()
-		var target_rotation = current_box.rotation + axis * angle
-		tween.tween_property(current_box, "rotation", target_rotation, 0.5).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT)
-		tween.tween_callback(func():
-			print("Rotation completed, checking collision...")
-			# Check for collision after rotation completes
-			if enable_collision_detection and check_collision():
-				print("Rotation collision detected! Snapping back to start rotation")
-				current_box.rotation = start_rotation
-			else:
-				print("No rotation collision detected")
+		
+		# Kill any existing rotation tween
+		if rotation_tween:
+			rotation_tween.kill()
+		
+		rotation_tween = create_tween()
+		var target_rotation_value = current_box.rotation + axis * angle
+		
+		# Set up the tween with a callback that checks collision during rotation
+		rotation_tween.tween_method(
+			func(rotation_value: Vector3):
+				current_box.rotation = rotation_value
+				# Check collision during rotation if enabled
+				if enable_collision_detection:
+					if check_collision():
+						print("Collision detected during rotation! Stopping and snapping back")
+						rotation_tween.kill()
+						current_box.rotation = start_rotation
+						rotating = false
+						return
+				,
+				current_box.rotation,
+				target_rotation_value,
+				0.5
+			).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT)
+		
+		# Add completion callback
+		rotation_tween.tween_callback(func():
+			print("Rotation completed successfully")
 			rotating = false
 		)
 
@@ -128,9 +154,7 @@ func _process(delta):
 				smooth_rotate(Vector3(0, 0, 1), rotationangle)
 	
 	if moving:
-		print("Moving box from", current_box.position, " to ", target_position)
 		current_box.position = current_box.position.move_toward(target_position, 3* delta)
-		
 		if current_box.position == target_position:
 			moving = false
 	
@@ -193,15 +217,14 @@ func _process(delta):
 func _physics_process(delta):
 	# Handle collision detection in physics process where Area3D updates are current
 	if moving and enable_collision_detection:
-		print("Checking collision during movement...")
 		if check_collision():
 			print("Collision detected! Snapping back to start position")
 			current_box.position = start_position
 			moving = false
 		else:
-			print("No collision during movement")
+			return
+	
+	# Note: Rotation collision checking is now handled in the tween callback
 	
 	var space_state = get_world_3d().direct_space_state
 	var mousepos = get_viewport().get_mouse_position()
-
-	# Your existing physics process code...
