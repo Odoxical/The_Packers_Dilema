@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dq3rfb8hmgybx"]
+[gd_scene load_steps=8 format=3 uid="uid://dq3rfb8hmgybx"]
 
-[ext_resource type="Script" uid="uid://dbujdskyvfk2n" path="res://Main_Menu.gd" id="1_m625n"]
+[ext_resource type="Script" uid="uid://dbujdskyvfk2n" path="res://main_menu.gd" id="1_m625n"]
 [ext_resource type="FontFile" uid="uid://clsaarat6uhm3" path="res://pixeloid.mono.otf" id="2_wugcc"]
 [ext_resource type="Texture2D" uid="uid://buha5iu05owwt" path="res://Ui/UI_box_Old_1.png" id="3_gtid3"]
+[ext_resource type="Theme" uid="uid://cjijluavjp7lh" path="res://Ui/Main Theme.tres" id="4_dnfjo"]
 
 [sub_resource type="Theme" id="Theme_gtid3"]
 default_font = ExtResource("2_wugcc")
@@ -81,6 +82,19 @@ offset_bottom = 404.0
 theme = SubResource("Theme_257up")
 text = "Configuration"
 metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = -574.0
+offset_top = -319.0
+offset_right = -341.0
+offset_bottom = -165.0
+theme = ExtResource("4_dnfjo")
+theme_override_font_sizes/font_size = 16
+text = "Controls
+W to move Box forward
+A to move left
+D to move right
+Z, X, and C to rotate"
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
