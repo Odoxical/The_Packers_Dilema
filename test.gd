@@ -51,6 +51,7 @@ func V2toV3(vector):
 	return Vector3(vector.x,vector.y,0)
 
 func snap_to_nearest_axis(vector: Vector3) -> Vector3:
+	#all this code is just to stop diagonal movement
 	if vector == Vector3.ZERO:
 		return Vector3.ZERO
 	var abs_x = abs(vector.x)
@@ -144,7 +145,6 @@ func _process(delta):
 			moving = true
 		
 		var rotationangle = deg_to_rad(90)
-		
 		if rotating == false:
 			if Input.is_action_just_pressed("Rotate X"):
 				smooth_rotate(Vector3(1, 0, 0), rotationangle)
@@ -152,6 +152,7 @@ func _process(delta):
 				smooth_rotate(Vector3(0, 1, 0), rotationangle)
 			if Input.is_action_just_pressed("Rotate Z"):
 				smooth_rotate(Vector3(0, 0, 1), rotationangle)
+	
 	
 	if moving:
 		current_box.position = current_box.position.move_toward(target_position, 3* delta)
