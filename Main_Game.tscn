@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://ymx05lfxcihv"]
+[gd_scene load_steps=5 format=3 uid="uid://ymx05lfxcihv"]
 
 [ext_resource type="PackedScene" uid="uid://d0odmrq5dj3kp" path="res://Models/Warehouse.glb" id="2_lxoxe"]
 [ext_resource type="MeshLibrary" uid="uid://dkr24g7b1uonw" path="res://Box patterns/Boxtest4.tres" id="3_aw5v0"]
+[ext_resource type="PackedScene" uid="uid://8r4hevnjyxh3" path="res://Audio/Where_House_.glb" id="4_24er3"]
 [ext_resource type="Script" uid="uid://dv5le7fqaiprk" path="res://test.gd" id="5_130gx"]
 
 [node name="Node3D" type="Node3D"]
@@ -45,5 +46,8 @@ spot_angle = 81.55
 spot_angle_attenuation = 5.65684
 
 [node name="Box Container" type="Node" parent="."]
+
+[node name="Where_House_" parent="." instance=ExtResource("4_24er3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -15)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

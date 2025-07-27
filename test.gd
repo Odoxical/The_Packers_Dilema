@@ -94,36 +94,67 @@ func smooth_rotate(axis: Vector3, angle: float):
 		return
 	else:
 		rotating = true
-		start_rotation = current_box.rotation  # Store starting rotation
-		print("Starting rotation from: ", start_rotation)
+		
+		# Store the starting transform for snap-back
+		var start_transform = current_box.global_transform
+		
+		# Debug: Print detailed rotation info
+		print("\n=== ROTATION DEBUG START ===")
+		print("Rotation axis requested: ", axis)
+		print("Rotation angle (degrees): ", rad_to_deg(angle))
+		print("Current global_rotation (degrees): ", Vector3(rad_to_deg(current_box.global_rotation.x), rad_to_deg(current_box.global_rotation.y), rad_to_deg(current_box.global_rotation.z)))
+		print("Current global_transform.basis: ", current_box.global_transform.basis)
 		
 		# Kill any existing rotation tween
 		if rotation_tween:
 			rotation_tween.kill()
 		
-		rotation_tween = create_tween()
-		var target_rotation_value = current_box.rotation + axis * angle
+		# Create rotation quaternion for the desired axis and angle
+		var rotation_quat = Quaternion(axis, angle)
+		print("Rotation quaternion: ", rotation_quat)
 		
-		# Set up the tween with a callback that checks collision during rotation
+		# Calculate target transform by applying rotation in WORLD SPACE (not local space)
+		# This means we apply the rotation BEFORE the current transform, not after
+		var target_transform = Transform3D(Basis(rotation_quat) * start_transform.basis, start_transform.origin)
+		print("Target basis: ", target_transform.basis)
+		
+		rotation_tween = create_tween()
+		
+		# Interpolate between the current and target transforms using quaternions
 		rotation_tween.tween_method(
-			func(rotation_value: Vector3):
-				current_box.rotation = rotation_value
+			func(progress: float):
+				# Interpolate the basis using quaternion slerp
+				var current_quat = Quaternion(start_transform.basis)
+				var target_quat = Quaternion(target_transform.basis)
+				var interpolated_quat = current_quat.slerp(target_quat, progress)
+				
+				# Apply the interpolated rotation
+				current_box.global_transform.basis = Basis(interpolated_quat)
+				
+				# Debug: Print rotation during tween (only occasionally to avoid spam)
+				if randf() < 0.1:  # Print ~10% of the time
+					print("During tween - progress: ", progress)
+					print("During tween - interpolated basis: ", current_box.global_transform.basis)
+				
 				# Check collision during rotation if enabled
 				if enable_collision_detection:
 					if check_collision():
 						print("Collision detected during rotation! Stopping and snapping back")
 						rotation_tween.kill()
-						current_box.rotation = start_rotation
+						current_box.global_transform = start_transform
 						rotating = false
 						return
 				,
-				current_box.rotation,
-				target_rotation_value,
+				0.0,
+				1.0,
 				0.5
 			).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT)
 		
 		# Add completion callback
 		rotation_tween.tween_callback(func():
+			print("Final global_rotation (degrees): ", Vector3(rad_to_deg(current_box.global_rotation.x), rad_to_deg(current_box.global_rotation.y), rad_to_deg(current_box.global_rotation.z)))
+			print("Final global_transform.basis: ", current_box.global_transform.basis)
+			print("=== ROTATION DEBUG END ===\n")
 			print("Rotation completed successfully")
 			rotating = false
 		)
