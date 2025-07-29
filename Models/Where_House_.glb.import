@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://8r4hevnjyxh3"
-path="res://.godot/imported/Where_House_.glb-2012f2284d577172cade960dd7597472.scn"
+path="res://.godot/imported/Where_House_.glb-eab65a8acf7009e47d9e1b9fad44b392.scn"
 
 [deps]
 
-source_file="res://Audio/Where_House_.glb"
-dest_files=["res://.godot/imported/Where_House_.glb-2012f2284d577172cade960dd7597472.scn"]
+source_file="res://Models/Where_House_.glb"
+dest_files=["res://.godot/imported/Where_House_.glb-eab65a8acf7009e47d9e1b9fad44b392.scn"]
 
 [params]
 

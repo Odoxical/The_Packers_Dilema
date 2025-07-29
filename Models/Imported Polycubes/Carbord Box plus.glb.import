@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://brldglxvfyqi1"
-path="res://.godot/imported/CubeBox.glb-68e2d5538cae80c136d3bf4f163b96cf.scn"
+uid="uid://ckepk4u5jebcp"
+path="res://.godot/imported/Carbord Box plus.glb-1b8e19f4fdfa0e08836e6ec654fda96b.scn"
 
 [deps]
 
-source_file="res://Models/CubeBox.glb"
-dest_files=["res://.godot/imported/CubeBox.glb-68e2d5538cae80c136d3bf4f163b96cf.scn"]
+source_file="res://Models/Imported Polycubes/Carbord Box plus.glb"
+dest_files=["res://.godot/imported/Carbord Box plus.glb-1b8e19f4fdfa0e08836e6ec654fda96b.scn"]
 
 [params]
 

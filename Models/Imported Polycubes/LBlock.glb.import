@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ckepk4u5jebcp"
-path="res://.godot/imported/Carbord Box plus.glb-e7fc73bc7af008d24a8451aae83b9df4.scn"
+uid="uid://dn7xgy5mj2b4y"
+path="res://.godot/imported/LBlock.glb-c1fd649ebb2c5aea37a08e0441b74ca9.scn"
 
 [deps]
 
-source_file="res://Models/Carbord Box plus.glb"
-dest_files=["res://.godot/imported/Carbord Box plus.glb-e7fc73bc7af008d24a8451aae83b9df4.scn"]
+source_file="res://Models/Imported Polycubes/LBlock.glb"
+dest_files=["res://.godot/imported/LBlock.glb-c1fd649ebb2c5aea37a08e0441b74ca9.scn"]
 
 [params]
 
@@ -32,12 +32,6 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"nodes": {
-"PATH:Cube": {
-"generate/physics": true
-}
-}
-}
+_subresources={}
 gltf/naming_version=1
 gltf/embedded_image_handling=1
