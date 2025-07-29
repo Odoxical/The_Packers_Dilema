@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://by50khmkxidsq"]
 
-[ext_resource type="Script" uid="uid://c1vaybu1206st" path="res://settings_menu.gd" id="1_0elue"]
+[ext_resource type="Script" uid="uid://c1vaybu1206st" path="res://Scenes/Godot Code/settings_menu.gd" id="1_0elue"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0elue")

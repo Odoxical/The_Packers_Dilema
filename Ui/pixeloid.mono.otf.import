@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://clsaarat6uhm3"
-path="res://.godot/imported/pixeloid.mono.otf-aacb0836e16ae8b86b91277554eea553.fontdata"
+path="res://.godot/imported/pixeloid.mono.otf-fc2b1fabfb47abafad53c7b98f2da107.fontdata"
 
 [deps]
 
-source_file="res://pixeloid.mono.otf"
-dest_files=["res://.godot/imported/pixeloid.mono.otf-aacb0836e16ae8b86b91277554eea553.fontdata"]
+source_file="res://Ui/pixeloid.mono.otf"
+dest_files=["res://.godot/imported/pixeloid.mono.otf-fc2b1fabfb47abafad53c7b98f2da107.fontdata"]
 
 [params]
 

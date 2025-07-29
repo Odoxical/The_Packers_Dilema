@@ -1,22 +1,22 @@
 [gd_scene load_steps=8 format=3 uid="uid://dq3rfb8hmgybx"]
 
-[ext_resource type="Script" uid="uid://dbujdskyvfk2n" path="res://main_menu.gd" id="1_m625n"]
-[ext_resource type="FontFile" uid="uid://clsaarat6uhm3" path="res://pixeloid.mono.otf" id="2_wugcc"]
-[ext_resource type="Texture2D" uid="uid://buha5iu05owwt" path="res://Ui/UI_box_Old_1.png" id="3_gtid3"]
-[ext_resource type="Theme" uid="uid://cjijluavjp7lh" path="res://Ui/Main Theme.tres" id="4_dnfjo"]
+[ext_resource type="Script" uid="uid://dbujdskyvfk2n" path="res://Scenes/Godot Code/main_menu.gd" id="1_7g4io"]
+[ext_resource type="FontFile" uid="uid://clsaarat6uhm3" path="res://Ui/pixeloid.mono.otf" id="2_8pwk3"]
+[ext_resource type="Texture2D" uid="uid://buha5iu05owwt" path="res://Ui/UI_box_Old_1.png" id="3_pc8sb"]
+[ext_resource type="Theme" uid="uid://cjijluavjp7lh" path="res://Ui/Main Theme.tres" id="4_2hiyy"]
 
 [sub_resource type="Theme" id="Theme_gtid3"]
-default_font = ExtResource("2_wugcc")
+default_font = ExtResource("2_8pwk3")
 
 [sub_resource type="Theme" id="Theme_dnfjo"]
-default_font = ExtResource("2_wugcc")
+default_font = ExtResource("2_8pwk3")
 
 [sub_resource type="Theme" id="Theme_257up"]
-default_font = ExtResource("2_wugcc")
+default_font = ExtResource("2_8pwk3")
 default_font_size = 235
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_m625n")
+script = ExtResource("1_7g4io")
 
 [node name="Exit" type="Button" parent="."]
 anchors_preset = 12
@@ -55,7 +55,7 @@ metadata/_edit_use_anchors_ = true
 [node name="UiBoxOld1" type="Sprite2D" parent="."]
 position = Vector2(24, 81)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("3_gtid3")
+texture = ExtResource("3_pc8sb")
 
 [node name="Settings" type="TextureButton" parent="UiBoxOld1"]
 anchors_preset = -1
@@ -88,7 +88,7 @@ offset_left = -574.0
 offset_top = -319.0
 offset_right = -341.0
 offset_bottom = -165.0
-theme = ExtResource("4_dnfjo")
+theme = ExtResource("4_2hiyy")
 theme_override_font_sizes/font_size = 16
 text = "Controls
 W to move Box forward
