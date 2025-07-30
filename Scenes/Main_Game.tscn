@@ -1,9 +1,14 @@
-[gd_scene load_steps=17 format=4 uid="uid://ymx05lfxcihv"]
+<<<<<<< Updated upstream
+[gd_scene load_steps=25 format=4 uid="uid://ymx05lfxcihv"]
+=======
+[gd_scene load_steps=18 format=4 uid="uid://ymx05lfxcihv"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://jwe03cgbpqd8" path="res://Models/Warehouse_ezgif.png" id="1_6quq6"]
 [ext_resource type="MeshLibrary" uid="uid://dkr24g7b1uonw" path="res://Box patterns/Boxtest4.tres" id="2_ndtwq"]
 [ext_resource type="Script" uid="uid://u0k6e5u2bo61" path="res://Scenes/Godot Code/Main Game.gd" id="3_0ox5e"]
-[ext_resource type="PackedScene" uid="uid://8r4hevnjyxh3" path="res://Models/Where_House_.glb" id="4_tt2q3"]
+[ext_resource type="Texture2D" path="res://Special Textures/cmu" id="4_ndtwq"]
+[ext_resource type="PackedScene" uid="uid://bxt7mjkrhgmh0" path="res://Models/High Speed, Heavy door.glb" id="5_0ox5e"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1mqp"]
 resource_name = "Material"
@@ -159,21 +164,105 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ce3sq")
 
+<<<<<<< Updated upstream
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tad8r"]
+resource_name = "Material"
+cull_mode = 2
+albedo_color = Color(0.768625, 0.713726, 0.650981, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_u2x2c"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"format": 34896613377,
+"index_count": 78,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAgADAAQABAAAAAIABAAGAAAABgAEAAgAAAAGAAcACAAEAAkABAAMAAkACAAJAAwADAAEAAMACAAMAAoADAADAAsACgAMAAsAAQALAAMACgALAA0AAQANAAsABwAKAA0AAQAAAA4AAAAHAA4AAQAOAAUABwANAA8ADQABAA8ADgAHAA8ADwABAAUADgAPAAUA"),
+"lods": [1e-10, PackedByteArray("AAABAAIAAgABAAMAAgADAAQABAAAAAIAAQAAAAUABAAGAAAAAAAGAAcAAAAHAAUABgAEAAgACAAEAAkACQAEAAMACAAJAAoABwALAAUACwABAAUABwAKAAsAAQALAAMACgAJAAsACQADAAsA")],
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAAAAP//AAD///////8AAP//AAD//wAA/////wAAAAD//wAAAAAAAAAA/////wAAAAAAAKmqAAAAAFtPqaoAAAAAAABVVQAAAAAAAAAAAAAAAFtPVVUAAAAA//8AAAAAAABbTwAAAAAAAP//VVUAAAAAW0///wAAAAD//6mqAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_802ec"]
+resource_name = "Where_House__Cube"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray("/18AAP+f/z//X/8//58AAP9f/7//n/9//5//v/9f/3/Wc1TV/1//v/+f/7//X1TV1nOp6v+f////X////1+p6v8fqmr/X/9//x//f/8fVVX/H/8//1//P/+f/z//3/9//5//f//f/z//X/8//5//f/9f/3//n/8/1nMAANZz/7//n1TV1nP/v/+fqerWc////9+qav/fVVU="),
+"format": 34896613399,
+"index_count": 78,
+"index_data": PackedByteArray("AAABAAIAAQAAAB4AAQAeAAMABwAfAAQAHwAHAAUAHwAFAAYACAAKACAACAAhAAoACwAhAAgACwAJACEADAAIACAADAAgACIAIwAMACIAIwAiAA0ADgAMACMADgAPAAwAEAARABIAEwARABAAEQATABQAEQAUABUAFgAXABgAFgAkABcAJAAWACUAJQAWABkAGgAbABwAGgAdABsA"),
+"lods": [1e-10, PackedByteArray("AAABAAIAAQAAAAMABAAFAAYABAAHAAUACAAJAAoACwAJAAgADAAIAAoADAAKAA0ADgAMAA0ADgAPAAwAEAARABIAEwARABAAEQATABQAEQAUABUAFgAXABgAFwAWABkAGgAbABwAGgAdABsA")],
+"material": SubResource("StandardMaterial3D_tad8r"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 38,
+"vertex_data": PackedByteArray("AAAAAP///7//////////v///AAD///+/AAD//////78AAAAAAAD///////8AAP//AAD//wAA/////wAAAAD//wAAW09VVVTVAAAAAAAAVNUAAP//AABU1QAAAABVVVTVAABbT6mqVNUAAP////9U1QAAAAD//1TVAAAAAKmqVNUAAAAAVVX/v///AAAAAP+/AAAAAAAA/78AAAAAqar/vwAAAAD///+///8AAP///7///////////wAA//8AAP///////wAA//8AAP//////////AAD//1TV/////wAAVNX//wAAAABU1f///////1TVAABbT////78AAFtPAAD//wAA//9VVVTVAABbTwAAVNUAAP//qapU1QAAW0///1TVAAD//1VV//8AAP//qar/////////////////////////v/+//7//v/+//7//v/+/VNVU1VTVVNVU1VTVVNVU1VTVVNVU1VTVVNVU1VTVVNUAAP9/AAD/fwAA/38AAP9/AAD/fwAA/3//f/+//3//v/9//7//f/+/qiqqKqoqqiqqKqoqqiqqKv//////v/+/VNVU1VTVVNVU1VTVVNVU1f9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_u2x2c")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tt2q3"]
+anisotropy_enabled = true
+anisotropy_flowmap = ExtResource("4_ndtwq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r18ng"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+roughness = 0.5
+emission_enabled = true
+emission = Color(1, 1, 0.553237, 1)
+emission_energy_multiplier = 999.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_h1l5a"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAD/////AAAAAP//AAD//wAA////////AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_15qgi"]
+resource_name = "Where_House__Cube_001"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray("/1////+f/7//n////1//v/9f/7//n/9//5//v/9f/3//X/9//5//P/+f/3//X/8//1//P/+fAAD/n/8//18AAP8f/3//X/8//1//f/8f/z//n/9//9//P//f/3//n/8/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_r18ng"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//VNUAAP//AABU1QAA/////1TVAAAAAAAAVNUAAAAAAAD///////8AAP//AAD//wAA/////wAAAAD/////AAAAAFTV////////VNX/////AABU1f//AAD//1TV//8AAP///78AAP//////v/////////+/AAAAAP///78AAAAAAAD/v///AAD///+///8AAAAA/78AAAAA////v/////8AAP//AAD///////8AAP//AAD/////////////VNVU1VTVVNVU1VTVVNVU1f+//7//v/+//7//v/+//7+qKqoqqiqqKqoqqiqqKqoq/////////////////////wAA/38AAP9/AAD/fwAA/3//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_h1l5a")
+=======
+[sub_resource type="BoxShape3D" id="BoxShape3D_6quq6"]
+size = Vector3(0.8, 0.8, 0.8)
+>>>>>>> Stashed changes
+
 [node name="Node3D" type="Node3D"]
 
 [node name="Warehouse" type="Node3D" parent="."]
 transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, -0.293756, 1.05452, -21.6606)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Warehouse"]
-root_node = NodePath("Door")
+root_node = NodePath("")
 libraries = {
 &"": SubResource("AnimationLibrary_tt2q3")
 }
-
-[node name="Door" type="MeshInstance3D" parent="Warehouse/AnimationPlayer"]
-transform = Transform3D(-4.15258e-09, 0, -1.6, 0, 2.2, 0, 0.095, 0, -6.99382e-08, -0.294, 1, -21.161)
-mesh = SubResource("ArrayMesh_gq2bl")
-skeleton = NodePath("")
 
 [node name="_Outside_" type="MeshInstance3D" parent="Warehouse"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -0.1, 0)
@@ -221,7 +310,1898 @@ spot_angle_attenuation = 5.65684
 
 [node name="Box Container" type="Node" parent="."]
 
-[node name="Where_House_" parent="." instance=ExtResource("4_tt2q3")]
+[node name="Where_House_" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -15)
+
+<<<<<<< Updated upstream
+[node name="Cube" type="MeshInstance3D" parent="Where_House_"]
+transform = Transform3D(6, 0, 0, 0, 1.5, 0, 0, 0, 2.25, 0, 0, 0)
+mesh = SubResource("ArrayMesh_802ec")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_tt2q3")
+
+[node name="Cube_001" type="MeshInstance3D" parent="Where_House_"]
+transform = Transform3D(1, 0, 0, 0, 2.25017, 0, 0, 0, 2.25017, -7.1, 0, 0)
+mesh = SubResource("ArrayMesh_15qgi")
+skeleton = NodePath("")
+
+[node name="High Speed, Heavy door" parent="." instance=ExtResource("5_0ox5e")]
+transform = Transform3D(-4.37114e-08, 0, 2.1, 0, 2.1, 0, -1, 0, -9.17939e-08, 0.784923, 1.13535, -21.25)
+=======
+[node name="Box Detection" type="Node3D" parent="."]
+
+[node name="Exact Cube" type="Node3D" parent="Box Detection"]
+
+[node name="Layer 1" type="Node3D" parent="Box Detection/Exact Cube"]
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube/Layer 1"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube/Layer 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube/Layer 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube/Layer 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube/Layer 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 1/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 1/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 2" type="Node3D" parent="Box Detection/Exact Cube"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube/Layer 2"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube/Layer 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube/Layer 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube/Layer 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube/Layer 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 2/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 2/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 3" type="Node3D" parent="Box Detection/Exact Cube"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube/Layer 3"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube/Layer 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube/Layer 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube/Layer 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube/Layer 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 3/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 3/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 4" type="Node3D" parent="Box Detection/Exact Cube"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube/Layer 4"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube/Layer 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube/Layer 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube/Layer 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube/Layer 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 4/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 4/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 5" type="Node3D" parent="Box Detection/Exact Cube"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube/Layer 5"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube/Layer 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube/Layer 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube/Layer 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube/Layer 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube/Layer 5/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube/Layer 5/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Exact Cube2" type="Node3D" parent="Box Detection"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+
+[node name="Layer 1" type="Node3D" parent="Box Detection/Exact Cube2"]
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube2/Layer 1"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube2/Layer 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube2/Layer 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube2/Layer 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube2/Layer 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 1/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 2" type="Node3D" parent="Box Detection/Exact Cube2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube2/Layer 2"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube2/Layer 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube2/Layer 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube2/Layer 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube2/Layer 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 2/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 3" type="Node3D" parent="Box Detection/Exact Cube2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube2/Layer 3"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube2/Layer 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube2/Layer 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube2/Layer 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube2/Layer 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 3/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 4" type="Node3D" parent="Box Detection/Exact Cube2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube2/Layer 4"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube2/Layer 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube2/Layer 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube2/Layer 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube2/Layer 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 4/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 5" type="Node3D" parent="Box Detection/Exact Cube2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Row 1" type="Node3D" parent="Box Detection/Exact Cube2/Layer 5"]
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 1/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 2" type="Node3D" parent="Box Detection/Exact Cube2/Layer 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 2/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 3" type="Node3D" parent="Box Detection/Exact Cube2/Layer 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 3/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 4" type="Node3D" parent="Box Detection/Exact Cube2/Layer 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 4/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Row 5" type="Node3D" parent="Box Detection/Exact Cube2/Layer 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Box Detector - 1" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5/Box Detector - 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 2" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5/Box Detector - 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 3" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5/Box Detector - 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 4" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5/Box Detector - 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Box Detector - 5" type="Area3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5/Box Detector - 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+>>>>>>> Stashed changes
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

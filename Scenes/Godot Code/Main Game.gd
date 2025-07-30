@@ -15,6 +15,7 @@ var rotating = false
 var rotation_tween : Tween  # Store reference to the rotation tween
 var direction = Vector3.ZERO
 var box_scene = load("res://Scenes/Boxes.tscn")
+var valid_collisions = []
 
 func _ready():
 	call_deferred("setup")
@@ -250,11 +251,14 @@ func _physics_process(delta):
 	# Handle collision detection in physics process where Area3D updates are current
 	if moving and enable_collision_detection:
 		if check_collision():
-			print("Collision detected! Snapping back to start position")
-			current_box.position = start_position
-			moving = false
-		else:
-			return
+			if "Box Detector" in str(valid_collisions):
+				print("Box Detector Detected") #add code here later add code here later add code here later add code here later add code here later add code here later add code here later add code here later
+			elif "Box Detector" not in str(valid_collisions):
+				print("Collision detected! Snapping back to start position")
+				current_box.position = start_position
+				moving = false
+			else:
+				return
 	
 	# Note: Rotation collision checking is now handled in the tween callback
 	

@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5rwwnmbscd7k"]
+[gd_scene load_steps=3 format=3 uid="uid://c5rwwnmbscd7k"]
 
 [ext_resource type="Texture2D" uid="uid://junqc8ndxi7j" path="res://Ui/UI_box_Old.png" id="1_kxc6g"]
 [ext_resource type="Theme" uid="uid://cjijluavjp7lh" path="res://Ui/Main Theme.tres" id="2_4k8qc"]
-[ext_resource type="Script" uid="uid://dl1r7xnj472d4" path="res://trucks_sent.gd" id="3_utnxa"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -37,8 +36,6 @@ offset_bottom = 271.0
 theme = ExtResource("2_4k8qc")
 theme_override_font_sizes/font_size = 30
 placeholder_text = "Trucks shipped = null"
-script = ExtResource("3_utnxa")
-theme_override_font_sizes/font_size = 30
 
 [node name="Clock out text" type="TextEdit" parent="."]
 offset_left = 426.0
