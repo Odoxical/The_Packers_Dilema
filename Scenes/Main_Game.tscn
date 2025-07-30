@@ -1,5 +1,9 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=25 format=4 uid="uid://ymx05lfxcihv"]
+=======
+[gd_scene load_steps=18 format=4 uid="uid://ymx05lfxcihv"]
+>>>>>>> Stashed changes
 =======
 [gd_scene load_steps=18 format=4 uid="uid://ymx05lfxcihv"]
 >>>>>>> Stashed changes
@@ -165,6 +169,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ce3sq")
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tad8r"]
 resource_name = "Material"
 cull_mode = 2
@@ -252,6 +257,10 @@ shadow_mesh = SubResource("ArrayMesh_h1l5a")
 [sub_resource type="BoxShape3D" id="BoxShape3D_6quq6"]
 size = Vector3(0.8, 0.8, 0.8)
 >>>>>>> Stashed changes
+=======
+[sub_resource type="BoxShape3D" id="BoxShape3D_6quq6"]
+size = Vector3(0.8, 0.8, 0.8)
+>>>>>>> Stashed changes
 
 [node name="Node3D" type="Node3D"]
 
@@ -314,6 +323,7 @@ spot_angle_attenuation = 5.65684
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -15)
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="Cube" type="MeshInstance3D" parent="Where_House_"]
 transform = Transform3D(6, 0, 0, 0, 1.5, 0, 0, 0, 2.25, 0, 0, 0)
 mesh = SubResource("ArrayMesh_802ec")
@@ -328,6 +338,8 @@ skeleton = NodePath("")
 [node name="High Speed, Heavy door" parent="." instance=ExtResource("5_0ox5e")]
 transform = Transform3D(-4.37114e-08, 0, 2.1, 0, 2.1, 0, -1, 0, -9.17939e-08, 0.784923, 1.13535, -21.25)
 =======
+=======
+>>>>>>> Stashed changes
 [node name="Box Detection" type="Node3D" parent="."]
 
 [node name="Exact Cube" type="Node3D" parent="Box Detection"]
@@ -2202,6 +2214,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Box Detection/Exact Cube2/Layer 5/Row 5/Box Detector - 5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
 shape = SubResource("BoxShape3D_6quq6")
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
