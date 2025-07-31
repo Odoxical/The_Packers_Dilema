@@ -52,23 +52,18 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="UiBoxOld1" type="Sprite2D" parent="."]
-position = Vector2(24, 81)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("3_pc8sb")
-
-[node name="Settings" type="TextureButton" parent="UiBoxOld1"]
+[node name="Settings" type="TextureButton" parent="."]
 anchors_preset = -1
 anchor_right = 2.20625
 anchor_bottom = 2.05
-offset_left = -400.0
-offset_top = -97.0
-offset_right = 187.0
-offset_bottom = 41.0
+offset_left = -76.0
+offset_top = 56.75
+offset_right = 511.0
+offset_bottom = 194.75
 scale = Vector2(0.25, 0.25)
 metadata/_edit_use_anchors_ = true
 
-[node name="Settingstext" type="TextEdit" parent="UiBoxOld1/Settings"]
+[node name="Settingstext" type="TextEdit" parent="Settings"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.0272109
@@ -82,6 +77,11 @@ offset_bottom = 404.0
 theme = SubResource("Theme_257up")
 text = "Configuration"
 metadata/_edit_use_anchors_ = true
+
+[node name="UiBoxOld1" type="Sprite2D" parent="."]
+position = Vector2(24, 81)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_pc8sb")
 
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_left = -574.0
@@ -98,4 +98,4 @@ Z, X, and C to rotate"
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="UiBoxOld1/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]

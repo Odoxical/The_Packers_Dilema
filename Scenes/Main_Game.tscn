@@ -1,9 +1,8 @@
-[gd_scene load_steps=25 format=4 uid="uid://ymx05lfxcihv"]
+[gd_scene load_steps=24 format=4 uid="uid://ymx05lfxcihv"]
 
 [ext_resource type="Texture2D" uid="uid://jwe03cgbpqd8" path="res://Models/Warehouse_ezgif.png" id="1_6quq6"]
 [ext_resource type="MeshLibrary" uid="uid://dkr24g7b1uonw" path="res://Box patterns/Boxtest4.tres" id="2_ndtwq"]
 [ext_resource type="Script" uid="uid://u0k6e5u2bo61" path="res://Scenes/Godot Code/Main Game.gd" id="3_0ox5e"]
-[ext_resource type="Texture2D" path="res://Special Textures/cmu" id="4_ndtwq"]
 [ext_resource type="PackedScene" uid="uid://bxt7mjkrhgmh0" path="res://Models/High Speed, Heavy door.glb" id="5_0ox5e"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1mqp"]
@@ -201,7 +200,6 @@ shadow_mesh = SubResource("ArrayMesh_u2x2c")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tt2q3"]
 anisotropy_enabled = true
-anisotropy_flowmap = ExtResource("4_ndtwq")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r18ng"]
 resource_name = "Material.001"
