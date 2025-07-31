@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://ymx05lfxcihv"]
+[gd_scene load_steps=25 format=4 uid="uid://ymx05lfxcihv"]
 
 [ext_resource type="Texture2D" uid="uid://jwe03cgbpqd8" path="res://Models/Warehouse_ezgif.png" id="1_6quq6"]
 [ext_resource type="MeshLibrary" uid="uid://dkr24g7b1uonw" path="res://Box patterns/Boxtest4.tres" id="2_ndtwq"]
@@ -242,6 +242,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_h1l5a")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_6quq6"]
+
 [node name="Node3D" type="Node3D"]
 
 [node name="Warehouse" type="Node3D" parent="."]
@@ -313,7 +315,174 @@ transform = Transform3D(1, 0, 0, 0, 2.25017, 0, 0, 0, 2.25017, -7.1, 0, 0)
 mesh = SubResource("ArrayMesh_15qgi")
 skeleton = NodePath("")
 
-[node name="High Speed, Heavy door" parent="." instance=ExtResource("5_0ox5e")]
-transform = Transform3D(-4.37114e-08, 0, 2.1, 0, 2.1, 0, -1, 0, -9.17939e-08, 0.784923, 1.13535, -21.25)
+[node name="High Speed, Heavy door" parent="Where_House_" instance=ExtResource("5_0ox5e")]
+transform = Transform3D(-4.37114e-08, 0, 2.1, 0, 2.1, 0, -1, 0, -9.17939e-08, -32.2151, 1.13535, -6.25)
+
+[node name="Slash 1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Layer 1" type="Node3D" parent="Slash 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 0)
+
+[node name="Area3D" type="Area3D" parent="Slash 1/Layer 1"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 1/Area3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D2" type="Area3D" parent="Slash 1/Layer 1"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 1/Area3D2"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D3" type="Area3D" parent="Slash 1/Layer 1"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 1/Area3D3"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D4" type="Area3D" parent="Slash 1/Layer 1"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 1/Area3D4"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D5" type="Area3D" parent="Slash 1/Layer 1"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 1/Area3D5"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 2" type="Node3D" parent="Slash 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
+
+[node name="Area3D" type="Area3D" parent="Slash 1/Layer 2"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 2/Area3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D2" type="Area3D" parent="Slash 1/Layer 2"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 2/Area3D2"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D3" type="Area3D" parent="Slash 1/Layer 2"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 2/Area3D3"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D4" type="Area3D" parent="Slash 1/Layer 2"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 2/Area3D4"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D5" type="Area3D" parent="Slash 1/Layer 2"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 2/Area3D5"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 3" type="Node3D" parent="Slash 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+
+[node name="Area3D" type="Area3D" parent="Slash 1/Layer 3"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 3/Area3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D2" type="Area3D" parent="Slash 1/Layer 3"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 3/Area3D2"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D3" type="Area3D" parent="Slash 1/Layer 3"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 3/Area3D3"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D4" type="Area3D" parent="Slash 1/Layer 3"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 3/Area3D4"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D5" type="Area3D" parent="Slash 1/Layer 3"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 3/Area3D5"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 4" type="Node3D" parent="Slash 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="Area3D" type="Area3D" parent="Slash 1/Layer 4"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 4/Area3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D2" type="Area3D" parent="Slash 1/Layer 4"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 4/Area3D2"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D3" type="Area3D" parent="Slash 1/Layer 4"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 4/Area3D3"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D4" type="Area3D" parent="Slash 1/Layer 4"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 4/Area3D4"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D5" type="Area3D" parent="Slash 1/Layer 4"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 4/Area3D5"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Layer 5" type="Node3D" parent="Slash 1"]
+
+[node name="Area3D" type="Area3D" parent="Slash 1/Layer 5"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 5/Area3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D2" type="Area3D" parent="Slash 1/Layer 5"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 5/Area3D2"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D3" type="Area3D" parent="Slash 1/Layer 5"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 5/Area3D3"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D4" type="Area3D" parent="Slash 1/Layer 5"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 5/Area3D4"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 1, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
+
+[node name="Area3D5" type="Area3D" parent="Slash 1/Layer 5"]
+
+[node name="Box Detector" type="CollisionShape3D" parent="Slash 1/Layer 5/Area3D5"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 2, 0, -5)
+shape = SubResource("BoxShape3D_6quq6")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
