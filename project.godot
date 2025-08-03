@@ -19,6 +19,10 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 Music="*res://Scenes/Godot Code/audio_stream_player.gd"
 GlobalVariables="*res://Scenes/Godot Code/global_variables.gd"
 
+[global_group]
+
+Box=""
+
 [input]
 
 "Rotate X"={

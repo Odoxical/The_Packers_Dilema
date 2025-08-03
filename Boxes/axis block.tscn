@@ -45,7 +45,7 @@ shadow_mesh = SubResource("ArrayMesh_1vsr8")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 
-[node name="Detector" type="Area3D" parent="CharacterBody3D"]
+[node name="Detector" type="Area3D" parent="CharacterBody3D" groups=["Box"]]
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="CharacterBody3D/Detector"]
 shape = SubResource("ConvexPolygonShape3D_3jcub")

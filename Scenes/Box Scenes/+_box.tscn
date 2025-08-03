@@ -83,7 +83,7 @@ points = PackedVector3Array(-0.290476, -0.3, 0.375397, 0.339683, 0.330159, 1.320
 mesh = SubResource("ArrayMesh_7s21x")
 skeleton = NodePath("")
 
-[node name="Detector" type="Area3D" parent="CharacterBody3D"]
+[node name="Detector" type="Area3D" parent="CharacterBody3D" groups=["Box"]]
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="CharacterBody3D/Detector"]
 shape = SubResource("ConvexPolygonShape3D_7mdjd")

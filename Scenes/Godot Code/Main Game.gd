@@ -70,8 +70,8 @@ func snap_to_nearest_axis(vector: Vector3) -> Vector3:
 func check_collision() -> bool:
 	# Check if current_area overlaps with any other areas
 	if current_area and current_area.has_overlapping_areas():
-		if str(current_area.get_child(1)) == "Box Detector":
-			print("inside buildzone")
+		if str(current_area.get_child(1)) == "Box Detector": ##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
+			print("inside buildzone")##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
 		else:
 			
 			var overlapping_areas = current_area.get_overlapping_areas()
@@ -80,8 +80,11 @@ func check_collision() -> bool:
 			# Filter out self-overlapping (if the same box has multiple areas)
 			var valid_collisions = []
 			for area in overlapping_areas:
+				if area != current_area and get_parent().is_in_group("No Colide"): ##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
+					print("No collision necessary") ##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
+					return false ##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
 				# Make sure we're not detecting collision with our own area or parent
-				if area != current_area and area.get_parent() != current_box:
+				elif area != current_area and area.get_parent() != current_box:
 					valid_collisions.append(area)
 					print("Valid collision with: ", area, " (parent: ", area.get_parent(), ")")
 			
@@ -90,6 +93,7 @@ func check_collision() -> bool:
 				return true
 			else:
 				print("No valid collisions found (only self-overlapping)")
+				return false
 	return false
 
 func smooth_rotate(axis: Vector3, angle: float):
@@ -253,10 +257,10 @@ func _physics_process(delta):
 	# Handle collision detection in physics process where Area3D updates are current
 	if moving and enable_collision_detection:
 		if check_collision():
-			if "Box Detector" in str(current_area.name):
+			if "Box Detector" in str(current_area.name): ##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
 				print("Box Detector Detected") #add code here later add code here later add code here later add code here later add code here later add code here later add code here later add code here later
-				return
-			elif "Box Detector" not in str(current_area.name):
+				return ##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
+			elif "Box Detector" not in str(current_area.name):##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
 				print("Collision detected! Snapping back to start position")
 				print(str(current_area.get_child(1)))
 				current_box.position = start_position

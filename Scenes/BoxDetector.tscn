@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn1y0qvpbi0hx"]
+
+[ext_resource type="Script" uid="uid://cbwm84ss0x2sc" path="res://Scenes/box_detector.gd" id="1_12pad"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6quq6"]
+
+[node name="BoxDetector" type="Area3D" groups=["No Colide"]]
+collision_layer = 0
+script = ExtResource("1_12pad")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("BoxShape3D_6quq6")
+debug_color = Color(0, 0.996078, 0.231373, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
