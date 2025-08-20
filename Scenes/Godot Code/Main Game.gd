@@ -197,6 +197,10 @@ func _process(delta):
 		if current_box.position == target_position:
 			moving = false
 	
+	if Input.is_action_just_pressed("Send out"):
+		
+		print()
+	
 	if Input.is_action_just_pressed("Stop Box Moving"):
 		# Instantiate the boxes scene (just to access its children)
 		var boxes_instance = box_scene.instantiate()
