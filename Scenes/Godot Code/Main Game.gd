@@ -198,7 +198,7 @@ func _process(delta):
 			moving = false
 	
 	if Input.is_action_just_pressed("Send out"):
-		
+		Area3DCollisionChecker.check_box_collisions(current_box)
 		print()
 	
 	if Input.is_action_just_pressed("Stop Box Moving"):
