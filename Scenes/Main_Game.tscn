@@ -1355,697 +1355,697 @@ skeleton = NodePath("")
 [node name="High Speed, Heavy door" parent="Where_House_" instance=ExtResource("5_0ox5e")]
 transform = Transform3D(-4.37114e-08, 0, 2.1, 0, 2.1, 0, -1, 0, -9.17939e-08, -32.2151, 1.13535, -6.25)
 
-[node name="VolumeCalculator" type="Node3D" parent="."]
+[node name="WorldAreas" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -4)
 
-[node name="Layer 1" type="Node3D" parent="VolumeCalculator"]
+[node name="Layer 1" type="Node3D" parent="WorldAreas"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 
-[node name="Area3D3" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D3" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
 
-[node name="Area3D4" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D4" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6)
 
-[node name="Area3D5" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D5" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
 
-[node name="Area3D6" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D6" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -6)
 
-[node name="Area3D7" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D7" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
 
-[node name="Area3D12" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D12" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5)
 
-[node name="Area3D13" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D13" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -5)
 
-[node name="Area3D14" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D14" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -5)
 
-[node name="Area3D15" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D15" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
 
-[node name="Area3D16" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D16" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -5)
 
-[node name="Area3D21" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D21" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
 
-[node name="Area3D22" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D22" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
 
-[node name="Area3D23" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D23" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
 
-[node name="Area3D24" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D24" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -4)
 
-[node name="Area3D25" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D25" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
 
-[node name="Area3D30" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D30" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
 
-[node name="Area3D31" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D31" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
 
-[node name="Area3D32" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D32" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
 
-[node name="Area3D33" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D33" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -3)
 
-[node name="Area3D34" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D34" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
 
-[node name="Area3D39" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D39" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
 
-[node name="Area3D40" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D40" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
 
-[node name="Area3D41" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D41" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
 
-[node name="Area3D42" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D42" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2)
 
-[node name="Area3D43" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D43" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
 
-[node name="Area3D48" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D48" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
 
-[node name="Area3D49" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D49" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1)
 
-[node name="Area3D50" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D50" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)
 
-[node name="Area3D51" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D51" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
 
-[node name="Area3D52" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D52" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
 
-[node name="Area3D57" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D57" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Area3D58" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D58" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
 
-[node name="Area3D59" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D59" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="Area3D60" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D60" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
 
-[node name="Area3D61" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D61" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
 
-[node name="Area3D66" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D66" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
 
-[node name="Area3D67" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D67" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
 
-[node name="Area3D68" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D68" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
 
-[node name="Area3D69" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D69" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
 
-[node name="Area3D70" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D70" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
 
-[node name="Area3D75" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D75" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
 
-[node name="Area3D76" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D76" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
 
-[node name="Area3D77" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D77" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
 
-[node name="Area3D78" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D78" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
 
-[node name="Area3D79" parent="VolumeCalculator/Layer 1" instance=ExtResource("6_85j3t")]
+[node name="Area3D79" parent="WorldAreas/Layer 1" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
 
-[node name="Layer 2" type="Node3D" parent="VolumeCalculator"]
+[node name="Layer 2" type="Node3D" parent="WorldAreas"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 0)
 
-[node name="Area3D3" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D3" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
 
-[node name="Area3D4" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D4" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6)
 
-[node name="Area3D5" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D5" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
 
-[node name="Area3D6" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D6" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -6)
 
-[node name="Area3D7" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D7" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
 
-[node name="Area3D12" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D12" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5)
 
-[node name="Area3D13" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D13" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -5)
 
-[node name="Area3D14" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D14" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -5)
 
-[node name="Area3D15" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D15" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
 
-[node name="Area3D16" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D16" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -5)
 
-[node name="Area3D21" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D21" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
 
-[node name="Area3D22" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D22" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
 
-[node name="Area3D23" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D23" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
 
-[node name="Area3D24" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D24" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -4)
 
-[node name="Area3D25" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D25" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
 
-[node name="Area3D30" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D30" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
 
-[node name="Area3D31" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D31" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
 
-[node name="Area3D32" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D32" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
 
-[node name="Area3D33" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D33" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -3)
 
-[node name="Area3D34" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D34" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
 
-[node name="Area3D39" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D39" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
 
-[node name="Area3D40" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D40" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
 
-[node name="Area3D41" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D41" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
 
-[node name="Area3D42" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D42" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2)
 
-[node name="Area3D43" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D43" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
 
-[node name="Area3D48" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D48" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
 
-[node name="Area3D49" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D49" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1)
 
-[node name="Area3D50" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D50" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)
 
-[node name="Area3D51" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D51" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
 
-[node name="Area3D52" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D52" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
 
-[node name="Area3D57" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D57" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Area3D58" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D58" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
 
-[node name="Area3D59" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D59" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="Area3D60" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D60" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
 
-[node name="Area3D61" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D61" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
 
-[node name="Area3D66" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D66" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
 
-[node name="Area3D67" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D67" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
 
-[node name="Area3D68" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D68" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
 
-[node name="Area3D69" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D69" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
 
-[node name="Area3D70" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D70" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
 
-[node name="Area3D75" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D75" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
 
-[node name="Area3D76" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D76" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
 
-[node name="Area3D77" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D77" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
 
-[node name="Area3D78" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D78" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
 
-[node name="Area3D79" parent="VolumeCalculator/Layer 2" instance=ExtResource("6_85j3t")]
+[node name="Area3D79" parent="WorldAreas/Layer 2" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
 
-[node name="Layer 3" type="Node3D" parent="VolumeCalculator"]
+[node name="Layer 3" type="Node3D" parent="WorldAreas"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 0)
 
-[node name="Area3D3" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D3" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
 
-[node name="Area3D4" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D4" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6)
 
-[node name="Area3D5" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D5" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
 
-[node name="Area3D6" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D6" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -6)
 
-[node name="Area3D7" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D7" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
 
-[node name="Area3D12" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D12" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5)
 
-[node name="Area3D13" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D13" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -5)
 
-[node name="Area3D14" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D14" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -5)
 
-[node name="Area3D15" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D15" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
 
-[node name="Area3D16" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D16" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -5)
 
-[node name="Area3D21" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D21" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
 
-[node name="Area3D22" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D22" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
 
-[node name="Area3D23" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D23" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
 
-[node name="Area3D24" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D24" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -4)
 
-[node name="Area3D25" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D25" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
 
-[node name="Area3D30" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D30" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
 
-[node name="Area3D31" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D31" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
 
-[node name="Area3D32" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D32" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
 
-[node name="Area3D33" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D33" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -3)
 
-[node name="Area3D34" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D34" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
 
-[node name="Area3D39" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D39" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
 
-[node name="Area3D40" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D40" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
 
-[node name="Area3D41" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D41" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
 
-[node name="Area3D42" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D42" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2)
 
-[node name="Area3D43" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D43" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
 
-[node name="Area3D48" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D48" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
 
-[node name="Area3D49" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D49" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1)
 
-[node name="Area3D50" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D50" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)
 
-[node name="Area3D51" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D51" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
 
-[node name="Area3D52" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D52" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
 
-[node name="Area3D57" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D57" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Area3D58" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D58" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
 
-[node name="Area3D59" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D59" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="Area3D60" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D60" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
 
-[node name="Area3D61" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D61" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
 
-[node name="Area3D66" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D66" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
 
-[node name="Area3D67" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D67" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
 
-[node name="Area3D68" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D68" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
 
-[node name="Area3D69" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D69" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
 
-[node name="Area3D70" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D70" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
 
-[node name="Area3D75" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D75" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
 
-[node name="Area3D76" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D76" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
 
-[node name="Area3D77" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D77" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
 
-[node name="Area3D78" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D78" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
 
-[node name="Area3D79" parent="VolumeCalculator/Layer 3" instance=ExtResource("6_85j3t")]
+[node name="Area3D79" parent="WorldAreas/Layer 3" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
 
-[node name="Layer 4" type="Node3D" parent="VolumeCalculator"]
+[node name="Layer 4" type="Node3D" parent="WorldAreas"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3, 0)
 
-[node name="Area3D3" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D3" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
 
-[node name="Area3D4" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D4" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6)
 
-[node name="Area3D5" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D5" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
 
-[node name="Area3D6" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D6" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -6)
 
-[node name="Area3D7" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D7" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
 
-[node name="Area3D12" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D12" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5)
 
-[node name="Area3D13" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D13" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -5)
 
-[node name="Area3D14" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D14" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -5)
 
-[node name="Area3D15" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D15" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
 
-[node name="Area3D16" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D16" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -5)
 
-[node name="Area3D21" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D21" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
 
-[node name="Area3D22" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D22" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
 
-[node name="Area3D23" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D23" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
 
-[node name="Area3D24" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D24" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -4)
 
-[node name="Area3D25" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D25" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
 
-[node name="Area3D30" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D30" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
 
-[node name="Area3D31" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D31" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
 
-[node name="Area3D32" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D32" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
 
-[node name="Area3D33" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D33" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -3)
 
-[node name="Area3D34" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D34" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
 
-[node name="Area3D39" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D39" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
 
-[node name="Area3D40" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D40" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
 
-[node name="Area3D41" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D41" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
 
-[node name="Area3D42" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D42" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2)
 
-[node name="Area3D43" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D43" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
 
-[node name="Area3D48" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D48" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
 
-[node name="Area3D49" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D49" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1)
 
-[node name="Area3D50" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D50" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)
 
-[node name="Area3D51" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D51" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
 
-[node name="Area3D52" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D52" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
 
-[node name="Area3D57" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D57" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Area3D58" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D58" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
 
-[node name="Area3D59" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D59" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="Area3D60" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D60" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
 
-[node name="Area3D61" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D61" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
 
-[node name="Area3D66" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D66" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
 
-[node name="Area3D67" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D67" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
 
-[node name="Area3D68" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D68" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
 
-[node name="Area3D69" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D69" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
 
-[node name="Area3D70" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D70" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
 
-[node name="Area3D75" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D75" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
 
-[node name="Area3D76" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D76" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
 
-[node name="Area3D77" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D77" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
 
-[node name="Area3D78" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D78" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
 
-[node name="Area3D79" parent="VolumeCalculator/Layer 4" instance=ExtResource("6_85j3t")]
+[node name="Area3D79" parent="WorldAreas/Layer 4" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
 
-[node name="Layer 5" type="Node3D" parent="VolumeCalculator"]
+[node name="Layer 5" type="Node3D" parent="WorldAreas"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4, 0)
 
-[node name="Area3D3" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D3" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
 
-[node name="Area3D4" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D4" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6)
 
-[node name="Area3D5" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D5" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
 
-[node name="Area3D6" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D6" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -6)
 
-[node name="Area3D7" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D7" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
 
-[node name="Area3D12" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D12" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5)
 
-[node name="Area3D13" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D13" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -5)
 
-[node name="Area3D14" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D14" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -5)
 
-[node name="Area3D15" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D15" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
 
-[node name="Area3D16" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D16" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -5)
 
-[node name="Area3D21" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D21" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
 
-[node name="Area3D22" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D22" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
 
-[node name="Area3D23" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D23" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
 
-[node name="Area3D24" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D24" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -4)
 
-[node name="Area3D25" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D25" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
 
-[node name="Area3D30" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D30" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
 
-[node name="Area3D31" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D31" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
 
-[node name="Area3D32" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D32" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3)
 
-[node name="Area3D33" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D33" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -3)
 
-[node name="Area3D34" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D34" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -3)
 
-[node name="Area3D39" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D39" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
 
-[node name="Area3D40" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D40" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
 
-[node name="Area3D41" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D41" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
 
-[node name="Area3D42" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D42" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2)
 
-[node name="Area3D43" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D43" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
 
-[node name="Area3D48" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D48" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
 
-[node name="Area3D49" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D49" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1)
 
-[node name="Area3D50" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D50" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)
 
-[node name="Area3D51" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D51" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
 
-[node name="Area3D52" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D52" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
 
-[node name="Area3D57" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D57" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Area3D58" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D58" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
 
-[node name="Area3D59" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D59" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="Area3D60" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D60" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
 
-[node name="Area3D61" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D61" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
 
-[node name="Area3D66" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D66" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
 
-[node name="Area3D67" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D67" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
 
-[node name="Area3D68" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D68" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
 
-[node name="Area3D69" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D69" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
 
-[node name="Area3D70" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D70" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
 
-[node name="Area3D75" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D75" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
 
-[node name="Area3D76" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D76" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
 
-[node name="Area3D77" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D77" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
 
-[node name="Area3D78" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D78" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
 
-[node name="Area3D79" parent="VolumeCalculator/Layer 5" instance=ExtResource("6_85j3t")]
+[node name="Area3D79" parent="WorldAreas/Layer 5" instance=ExtResource("6_85j3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
 
 [node name="Truck" type="Node3D" parent="."]

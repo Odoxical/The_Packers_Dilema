@@ -336,7 +336,7 @@ points = PackedVector3Array(-0.290476, -0.3, 0.375397, 0.339683, 0.330159, 1.320
 
 [node name="Box Templates" type="Node3D"]
 
-[node name="L Cube" type="Node3D" parent="."]
+[node name="L Cube" type="Node3D" parent="." groups=["Box"]]
 transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -2, 1, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="L Cube"]
@@ -354,9 +354,9 @@ shape = SubResource("ConvexPolygonShape3D_r1vlx")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0555837, 0.0295181)
 shape = SubResource("ConvexPolygonShape3D_he2bk")
 
-[node name="Axis Cube" parent="." instance=ExtResource("1_bk8u0")]
+[node name="Axis Cube" parent="." groups=["Box"] instance=ExtResource("1_bk8u0")]
 
-[node name="Z Box" type="Node3D" parent="."]
+[node name="Z Box" type="Node3D" parent="." groups=["Box"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="Z Box"]
@@ -376,7 +376,7 @@ shape = SubResource("ConvexPolygonShape3D_gfldv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_54l3b")
 
-[node name="Square Box" type="Node3D" parent="."]
+[node name="Square Box" type="Node3D" parent="." groups=["Box"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.5, 0.5)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="Square Box"]
@@ -392,7 +392,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.5)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Square Box/CharacterBody3D/Detector"]
 shape = SubResource("ConvexPolygonShape3D_l5odp")
 
-[node name="M Cube" type="Node3D" parent="."]
+[node name="M Cube" type="Node3D" parent="." groups=["Box"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="M Cube"]
@@ -415,7 +415,7 @@ shape = SubResource("ConvexPolygonShape3D_dqnii")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="M Cube/CharacterBody3D/Detector"]
 shape = SubResource("ConcavePolygonShape3D_3yh3y")
 
-[node name="+ Box" type="Node3D" parent="."]
+[node name="+ Box" type="Node3D" parent="." groups=["Box"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="+ Box"]

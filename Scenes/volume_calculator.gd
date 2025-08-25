@@ -15,6 +15,85 @@ static func _find_areas_recursive(node: Node, areas: Array[Area3D]) -> void:
 			areas.append(child as Area3D)
 		_find_areas_recursive(child, areas)
 
+static func check_box_vs_world_collisions(box_container_node: Node, print_results: bool = true) -> Dictionary:
+	# Find all Area3D nodes in the box container (these are the box detectors)
+	var box_areas = find_area3d_children(box_container_node)
+	
+	# Find all Area3D nodes in the scene that are NOT in the box container
+	var scene_root = box_container_node.get_tree().current_scene
+	var all_areas = find_area3d_children(scene_root)
+	var world_areas: Array[Area3D] = []
+	
+	# Filter out box areas to get only world/level areas
+	for area in all_areas:
+		var is_box_area = false
+		# Check if this area is a descendant of box_container_node
+		var check_node = area
+		while check_node != null:
+			if check_node == box_container_node:
+				is_box_area = true
+				break
+			check_node = check_node.get_parent()
+		
+		if not is_box_area:
+			world_areas.append(area)
+	
+	if print_results:
+		print("Checking ", box_areas.size(), " box areas against ", world_areas.size(), " world areas...")
+	
+	var collision_results = {}
+	var boxes_with_collisions = []
+	var world_areas_with_collisions = []
+	var world_areas_without_collisions = []
+	
+	# Check each world area to see if any boxes are overlapping it
+	for world_area in world_areas:
+		var overlapping_areas = world_area.get_overlapping_areas()
+		var colliding_boxes = []
+		
+		# Check if any overlapping areas are box areas
+		for overlapping_area in overlapping_areas:
+			if overlapping_area in box_areas:
+				colliding_boxes.append(overlapping_area)
+				if overlapping_area not in boxes_with_collisions:
+					boxes_with_collisions.append(overlapping_area)
+		
+		if colliding_boxes.size() > 0:
+			world_areas_with_collisions.append(world_area)
+			collision_results[world_area.name] = colliding_boxes
+			if print_results:
+				var box_names = []
+				for box in colliding_boxes:
+					box_names.append(box.name)
+				print("World area '", world_area.name, "' has collision with boxes: ", box_names)
+		else:
+			world_areas_without_collisions.append(world_area)
+	
+	# Prepare results
+	var results = {
+		"total_box_areas": box_areas.size(),
+		"total_world_areas": world_areas.size(),
+		"boxes_with_collisions": boxes_with_collisions,
+		"world_areas_with_collisions": world_areas_with_collisions,
+		"world_areas_without_collisions": world_areas_without_collisions,
+		"collision_details": collision_results
+	}
+	
+	if print_results:
+		print("=== COLLISION SUMMARY ===")
+		print("Total boxes checked: ", results.total_box_areas)
+		print("Total world areas checked: ", results.total_world_areas)
+		print("World areas WITH box collisions: ", results.world_areas_with_collisions.size())
+		print("World areas WITHOUT box collisions: ", results.world_areas_without_collisions.size())
+		print("Boxes involved in collisions: ", results.boxes_with_collisions.size())
+		
+		if results.world_areas_without_collisions.size() > 0:
+			print("World areas with no collisions:")
+			for area in results.world_areas_without_collisions:
+				print("  - ", area.name)
+	
+	return results
+
 # Static function to check collisions between Area3D nodes and a specific group
 # Returns a dictionary with collision statistics and details
 static func check_area_group_collisions(parent_node: Node, target_group: String = "Box", print_results: bool = true) -> Dictionary:

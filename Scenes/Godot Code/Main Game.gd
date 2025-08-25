@@ -177,8 +177,10 @@ func _process(delta):
 			moving = false
 	
 	if Input.is_action_just_pressed("Send out"): ##currently working on
-		Area3DCollisionChecker.check_box_collisions($BoxContainer)
+		for i in "Box Container":
+			Area3DCollisionChecker.check_area_group_collisions(get_tree().current_scene, "VolumeCalculator", true)
 		print("=== DEBUGGING ===")
+		var box_container = $"../Box Container"
 		var parent = current_box.get_parent()
 		print("current_box: ", current_box)
 		print("current_box is null: ", current_box == null)
@@ -204,8 +206,8 @@ func _process(delta):
 		# Get all children (assumed to be different box scenes as nodes)
 		var box_templates = []
 		for child in boxes_instance.get_children():
-			box_templates.append(child.duplicate())
 		
+			box_templates.append(child.duplicate())
 		if box_templates.size() > 0:
 			# Pick a random box
 			var selected_box = box_templates[randi() % box_templates.size()]
