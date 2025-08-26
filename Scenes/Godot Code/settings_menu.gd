@@ -3,7 +3,7 @@ extends Node2D
 var visibility = 0
 
 func _on_ready():
-	preload("res://audio_stream_player.gd")
+	print(ready)
 
 
 func _on_main_menu_pressed() -> void:
