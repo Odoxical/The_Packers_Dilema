@@ -16,9 +16,13 @@ var rotation_tween : Tween  # Store reference to the rotation tween
 var direction = Vector3.ZERO
 var box_scene = load("res://Scenes/Boxes.tscn")
 var valid_collisions = []
+@export var volume_layers : Node3D
 
 func _ready():
 	call_deferred("setup")
+	if volume_layers == null:
+		print("No volume layer node set")
+		
 
 func setup():
 	var collider = ray.get_collider()
@@ -75,6 +79,7 @@ func check_collision() -> bool:
 		else:
 			
 			var overlapping_areas = current_area.get_overlapping_areas()
+			print("All overlapping areas: ", overlapping_areas)
 			
 			# Filter out self-overlapping (if the same box has multiple areas)
 			var valid_collisions = []
@@ -85,8 +90,10 @@ func check_collision() -> bool:
 				# Make sure we're not detecting collision with our own area or parent
 				elif area != current_area and area.get_parent() != current_box:
 					valid_collisions.append(area)
+					print("Valid collision with: ", area, " (parent: ", area.get_parent(), ")")
 			
 			if valid_collisions.size() > 0:
+				print("Collision detected with: ", valid_collisions)
 				return true
 			else:
 				print("No valid collisions found (only self-overlapping)")
@@ -102,16 +109,25 @@ func smooth_rotate(axis: Vector3, angle: float):
 		# Store the starting transform for snap-back
 		var start_transform = current_box.global_transform
 		
+		# Debug: Print detailed rotation info
+		print("\n=== ROTATION DEBUG START ===")
+		print("Rotation axis requested: ", axis)
+		print("Rotation angle (degrees): ", rad_to_deg(angle))
+		print("Current global_rotation (degrees): ", Vector3(rad_to_deg(current_box.global_rotation.x), rad_to_deg(current_box.global_rotation.y), rad_to_deg(current_box.global_rotation.z)))
+		print("Current global_transform.basis: ", current_box.global_transform.basis)
+		
 		# Kill any existing rotation tween
 		if rotation_tween:
 			rotation_tween.kill()
 		
 		# Create rotation quaternion for the desired axis and angle
 		var rotation_quat = Quaternion(axis, angle)
+		print("Rotation quaternion: ", rotation_quat)
 		
 		# Calculate target transform by applying rotation in WORLD SPACE (not local space)
 		# This means we apply the rotation BEFORE the current transform, not after
 		var target_transform = Transform3D(Basis(rotation_quat) * start_transform.basis, start_transform.origin)
+		print("Target basis: ", target_transform.basis)
 		
 		rotation_tween = create_tween()
 		
@@ -125,6 +141,11 @@ func smooth_rotate(axis: Vector3, angle: float):
 				
 				# Apply the interpolated rotation
 				current_box.global_transform.basis = Basis(interpolated_quat)
+				
+				# Debug: Print rotation during tween (only occasionally to avoid spam)
+				if randf() < 0.1:  # Print ~10% of the time
+					print("During tween - progress: ", progress)
+					print("During tween - interpolated basis: ", current_box.global_transform.basis)
 				
 				# Check collision during rotation if enabled
 				if enable_collision_detection:
@@ -142,6 +163,10 @@ func smooth_rotate(axis: Vector3, angle: float):
 		
 		# Add completion callback
 		rotation_tween.tween_callback(func():
+			print("Final global_rotation (degrees): ", Vector3(rad_to_deg(current_box.global_rotation.x), rad_to_deg(current_box.global_rotation.y), rad_to_deg(current_box.global_rotation.z)))
+			print("Final global_transform.basis: ", current_box.global_transform.basis)
+			print("=== ROTATION DEBUG END ===\n")
+			print("Rotation completed successfully")
 			rotating = false
 		)
 
@@ -176,29 +201,9 @@ func _process(delta):
 		if current_box.position == target_position:
 			moving = false
 	
-	if Input.is_action_just_pressed("Send out"): ##currently working on
-		for i in "Box Container":
-			Area3DCollisionChecker.check_area_group_collisions(get_tree().current_scene, "VolumeCalculator", true)
-		print("=== DEBUGGING ===")
-		var box_container = $"../Box Container"
-		var parent = current_box.get_parent()
-		print("current_box: ", current_box)
-		print("current_box is null: ", current_box == null)
-		
-		if current_box != null:
-			print("current_box.name: ", current_box.name)
-			print("current_box parent: ", parent)
-			print("parent is null: ", parent == null)
-		
-		if parent != null:
-			print("parent.name: ", parent.name)
-			print("parent children count: ", parent.get_child_count())
-			# Now try the collision check
-			Area3DCollisionChecker.check_box_collisions(parent)
-		else:
-			print("ERROR: Parent is null!")
-	else:
-		print("ERROR: current_box is null!")
+	if Input.is_action_just_pressed("Send out"):
+		check_volume()
+		print("SEND OUT")
 	
 	if Input.is_action_just_pressed("Stop Box Moving"):
 		# Instantiate the boxes scene (just to access its children)
@@ -206,8 +211,8 @@ func _process(delta):
 		# Get all children (assumed to be different box scenes as nodes)
 		var box_templates = []
 		for child in boxes_instance.get_children():
-		
 			box_templates.append(child.duplicate())
+		
 		if box_templates.size() > 0:
 			# Pick a random box
 			var selected_box = box_templates[randi() % box_templates.size()]
@@ -216,6 +221,10 @@ func _process(delta):
 			selected_box.global_position = Vector3(0, 2, -2)
 			selected_box.reparent($"../Box Container")
 			
+			# Debug: Print the structure of the spawned box
+			print("Spawned box structure:")
+			print("Selected box: ", selected_box)
+			print("Children of selected box:")
 			for child in selected_box.get_children():
 				print("  - ", child.name, " (", child.get_class(), ")")
 				for grandchild in child.get_children():
@@ -248,6 +257,8 @@ func _process(delta):
 			else:
 				print("No CharacterBody3D found in spawned box")
 			
+			print("Final current_box: ", current_box)
+			print("Final current_area: ", current_area)
 			moving = false
 
 func _physics_process(delta):
@@ -258,6 +269,7 @@ func _physics_process(delta):
 				print("Box Detector Detected") #add code here later add code here later add code here later add code here later add code here later add code here later add code here later add code here later
 				return ##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
 			elif "Box Detector" not in str(current_area.name):##CODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEINGCODEING
+				print("Collision detected! Snapping back to start position")
 				print(str(current_area.get_child(1)))
 				current_box.position = start_position
 				moving = false
@@ -268,3 +280,13 @@ func _physics_process(delta):
 	
 	var space_state = get_world_3d().direct_space_state
 	var mousepos = get_viewport().get_mouse_position()
+
+func check_volume():
+	var volumes = volume_layers.find_children("Area3D*")
+	print(volumes)
+	var free_space = volumes.size()
+	for volume : Area3D in volumes:
+		if volume.get_overlapping_areas().size() > 0:
+			free_space -=1
+	print(free_space)
+			
