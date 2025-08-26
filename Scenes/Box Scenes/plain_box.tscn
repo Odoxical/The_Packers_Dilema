@@ -68,12 +68,16 @@ shadow_mesh = SubResource("ArrayMesh_h5gsm")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_h5gsm"]
 
-[node name="PlainBox" type="CharacterBody3D"]
+[node name="Plain box" type="Node3D"]
 
-[node name="Cube" type="MeshInstance3D" parent="."]
+[node name="PlainBox" type="CharacterBody3D" parent="."]
+
+[node name="Visual" type="MeshInstance3D" parent="PlainBox"]
 mesh = SubResource("ArrayMesh_v1ty2")
 skeleton = NodePath("")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="Detector" type="Area3D" parent="PlainBox"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlainBox/Detector"]
 transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
 shape = SubResource("BoxShape3D_h5gsm")

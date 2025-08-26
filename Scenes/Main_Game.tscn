@@ -1355,7 +1355,7 @@ mesh = SubResource("ArrayMesh_15qgi")
 skeleton = NodePath("")
 
 [node name="High Speed, Heavy door" parent="Where_House_" instance=ExtResource("5_0ox5e")]
-transform = Transform3D(-4.37114e-08, 0, 2.1, 0, 2.1, 0, -1, 0, -9.17939e-08, -32.2151, 1.13535, -6.25)
+transform = Transform3D(-4.37114e-08, 0, 2.4, 0, 2.1, 0, -1, 0, -1.04907e-07, -32.0716, 1.135, -6.25)
 
 [node name="VolumeLayers" type="Node3D" parent="." node_paths=PackedStringArray("parent_node")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -4)
