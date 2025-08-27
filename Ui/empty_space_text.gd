@@ -1,11 +1,11 @@
-extends Node
+extends TextEdit
+
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var space_filled = 0
-	var time_taken = 0
-	
+	get_node("/root/Main_Game/")
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

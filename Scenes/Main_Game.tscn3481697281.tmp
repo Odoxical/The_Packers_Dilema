@@ -2195,7 +2195,6 @@ stream = ExtResource("8_85j3t")
 
 [node name="Music" type="AudioStreamPlayer" parent="Audio"]
 stream = SubResource("AudioStreamPlaylist_d2375")
-volume_db = -10.0
 autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1332,6 +1332,8 @@ metadata/_editor_floor_ = Vector3(0, 4, 0)
 transform = Transform3D(1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, 1, 0.192255, 2.42242, 3.49184)
 fov = 69.76
 script = ExtResource("3_0ox5e")
+grid_size = null
+enable_collision_detection = null
 volume_layers = NodePath("../VolumeLayers")
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
@@ -2195,7 +2197,6 @@ stream = ExtResource("8_85j3t")
 
 [node name="Music" type="AudioStreamPlayer" parent="Audio"]
 stream = SubResource("AudioStreamPlaylist_d2375")
-volume_db = -10.0
 autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
