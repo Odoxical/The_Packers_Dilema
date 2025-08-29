@@ -7,10 +7,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if global_variables.diagetic_music != change_check:
+	if GlobalVariables.diagetic_music != change_check:
 		get_node("Diagetic").stop()
 		get_node("Non_diagetic").stop()
-		if global_variables.diagetic_music == 1:
+		if GlobalVariables.diagetic_music == 1:
 			get_node("Diagetic").play()
-		if global_variables.diagetic_music == 0:
+		if GlobalVariables.diagetic_music == 0:
 			get_node("Non_diagetic").play()
