@@ -64,7 +64,7 @@ offset_left = 476.0
 offset_top = 61.0
 offset_right = 602.0
 offset_bottom = 120.0
-text = "Go To Music"
+text = "Make Music Non-diagetic"
 
 [connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="drag_ended" from="Buttonsize" to="." method="_on_buttonsize_drag_ended"]

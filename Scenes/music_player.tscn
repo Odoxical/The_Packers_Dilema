@@ -1,8 +1,44 @@
-[gd_scene load_steps=2 format=3 uid="uid://b67ws6cvbmo0s"]
+[gd_scene load_steps=14 format=3 uid="uid://b67ws6cvbmo0s"]
 
-[ext_resource type="Script" uid="uid://dobne532y3unt" path="res://Scenes/Godot Code/audio_stream_player.gd" id="1_ous86"]
+[ext_resource type="Script" uid="uid://caw32nrdyo8td" path="res://Scenes/music_player.gd" id="1_b03an"]
+[ext_resource type="AudioStream" uid="uid://vm5ygbwu65ng" path="res://Audio/Music/Non-Diagetic/Airport_NonDia.mp3" id="2_hnt0s"]
+[ext_resource type="AudioStream" uid="uid://debv0tkbtgodt" path="res://Audio/Music/Non-Diagetic/Airport2_NonDia.mp3" id="3_tx3aj"]
+[ext_resource type="AudioStream" uid="uid://c7j6cvjjo44yj" path="res://Audio/Music/Non-Diagetic/Airport3_NonDia.mp3" id="4_nu6f5"]
+[ext_resource type="AudioStream" uid="uid://dhebjatgaboae" path="res://Audio/Music/Non-Diagetic/Airport4- Non Dia.mp3" id="5_uvqsp"]
+[ext_resource type="AudioStream" uid="uid://c0hy2bdsr4u1a" path="res://Audio/Music/Non-Diagetic/DJ Suptic - Amnestic Dreams.mp3" id="6_1awc0"]
+[ext_resource type="AudioStream" uid="uid://o8hhbvyu3tos" path="res://Audio/Music/Diagetic/Old Airport 1_4.mp3" id="7_srdbd"]
+[ext_resource type="AudioStream" uid="uid://cfuhloo58q55k" path="res://Audio/Music/Diagetic/Old airport 2_4.mp3" id="8_3tbcx"]
+[ext_resource type="AudioStream" uid="uid://cgcxlcb46khrw" path="res://Audio/Music/Diagetic/Old Airport 3_4.mp3" id="9_1rg5y"]
+[ext_resource type="AudioStream" uid="uid://bq6kqkpgn0kxs" path="res://Audio/Music/Diagetic/Airline Old 4_4.mp3" id="10_xormb"]
+[ext_resource type="AudioStream" uid="uid://dkyq68jlwvoux" path="res://Audio/Music/Diagetic/Old Amnesia.mp3" id="11_8kjaw"]
 
-[node name="Music Player" type="AudioStreamPlayer"]
-script = ExtResource("1_ous86")
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_3x7ut"]
+shuffle = true
+stream_count = 5
+stream_0 = ExtResource("2_hnt0s")
+stream_1 = ExtResource("3_tx3aj")
+stream_2 = ExtResource("4_nu6f5")
+stream_3 = ExtResource("5_uvqsp")
+stream_4 = ExtResource("6_1awc0")
 
-[connection signal="finished" from="." to="." method="_on_finished"]
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_xffsr"]
+shuffle = true
+stream_count = 5
+stream_0 = ExtResource("7_srdbd")
+stream_1 = ExtResource("8_3tbcx")
+stream_2 = ExtResource("9_1rg5y")
+stream_3 = ExtResource("10_xormb")
+stream_4 = ExtResource("11_8kjaw")
+
+[node name="Music" type="Node"]
+script = ExtResource("1_b03an")
+
+[node name="Non_diagetic" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamPlaylist_3x7ut")
+volume_db = -10.0
+
+[node name="Diagetic" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamPlaylist_xffsr")
+autoplay = true
+
+[connection signal="finished" from="Diagetic" to="Diagetic" method="_on_finished"]
