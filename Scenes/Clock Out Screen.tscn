@@ -1,10 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://c5rwwnmbscd7k"]
 
+[ext_resource type="Script" uid="uid://l0g0s72rdp6m" path="res://Scenes/clock_out_screen.gd" id="1_iuqlr"]
 [ext_resource type="Texture2D" uid="uid://junqc8ndxi7j" path="res://Ui/UI_box_Old.png" id="1_kxc6g"]
 [ext_resource type="Theme" uid="uid://cjijluavjp7lh" path="res://Ui/Main Theme.tres" id="2_4k8qc"]
-[ext_resource type="Script" uid="uid://djkww2r6suw0u" path="res://Ui/empty_space_text.gd" id="3_kxc6g"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_iuqlr")
 
 [node name="Menu Background" type="Sprite2D" parent="."]
 position = Vector2(448, 380)
@@ -19,6 +20,7 @@ offset_bottom = 431.0
 theme = ExtResource("2_4k8qc")
 theme_override_font_sizes/font_size = 30
 placeholder_text = "Score = null"
+editable = false
 
 [node name="Crates shipped text" type="TextEdit" parent="."]
 offset_left = 328.0
@@ -37,7 +39,6 @@ offset_bottom = 271.0
 theme = ExtResource("2_4k8qc")
 theme_override_font_sizes/font_size = 30
 placeholder_text = "Time Taken = null"
-script = ExtResource("3_kxc6g")
 
 [node name="Clock out text" type="TextEdit" parent="."]
 offset_left = 426.0

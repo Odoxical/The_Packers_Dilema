@@ -25,6 +25,6 @@ func _on_buttonsize_drag_ended(value_changed: bool) -> void:
 func _on_font_size_slider_drag_started() -> void:
 	$"Main text".Vector2($"Font Size Slider".value,0)
 
-func _on_undiagetise_music_pressed():
-	global_variables.diagetic_music += 1
+func _on_undiagetise_music_pressed(): #when the button is pressed, the music track switches
+	music_player.diagetic_music += 1 ##
 	

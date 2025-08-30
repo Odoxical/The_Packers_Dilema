@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://b67ws6cvbmo0s"]
 
-[ext_resource type="Script" uid="uid://caw32nrdyo8td" path="res://Scenes/music_player.gd" id="1_b03an"]
+[ext_resource type="Script" uid="uid://caw32nrdyo8td" path="res://Scenes/Godot Code/music_player.gd" id="1_b03an"]
 [ext_resource type="AudioStream" uid="uid://vm5ygbwu65ng" path="res://Audio/Music/Non-Diagetic/Airport_NonDia.mp3" id="2_hnt0s"]
 [ext_resource type="AudioStream" uid="uid://debv0tkbtgodt" path="res://Audio/Music/Non-Diagetic/Airport2_NonDia.mp3" id="3_tx3aj"]
 [ext_resource type="AudioStream" uid="uid://c7j6cvjjo44yj" path="res://Audio/Music/Non-Diagetic/Airport3_NonDia.mp3" id="4_nu6f5"]

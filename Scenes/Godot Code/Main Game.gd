@@ -22,6 +22,7 @@ var free_space = 0
 
 func _ready():
 	call_deferred("setup")
+	preload("res://Scenes/music_player.tscn") ##
 	if volume_layers == null:
 		print("No volume layer node set")
 		
@@ -180,8 +181,6 @@ func _process(delta):
 	if Input.is_action_just_pressed("Send out"):
 		check_volume()
 		print("SEND OUT")
-		##var global_variables.space_filled = free_space - space_available
-		##global_variables.free_space
 		get_tree().change_scene_to_file("res://Ui/Clock Out Screen.tscn")
 	
 	if Input.is_action_just_pressed("Stop Box Moving"):
@@ -255,4 +254,5 @@ func check_volume():
 		if volume.get_overlapping_areas().size() > 0:
 			free_space -=1
 	print(free_space)
+	
 			
