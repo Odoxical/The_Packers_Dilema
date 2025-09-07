@@ -82,7 +82,7 @@ func check_collision() -> bool:
 			if area != current_area and get_parent().is_in_group("No Colide"): 
 				print("No collision necessary")
 				return false
-			# Mmake sure we're not detecting collision with our own area or parent
+			# Make sure we're not detecting collision with our own area or parent
 			elif area != current_area and area.get_parent() != current_box:
 				valid_collisions.append(area)
 		
@@ -236,7 +236,7 @@ func _physics_process(delta):
 	if moving and enable_collision_detection:
 		if check_collision():
 			print("Collision detected! Snapping back to start position")
-			get_tree().get_root().get_node("../Audio/Box col sound").play() ##
+#			get_tree().get_root().get_node("../Audio/Box col sound").play() ##
 			current_box.position = start_position
 			moving = false
 		else:
