@@ -22,7 +22,7 @@ var free_space = 0
 
 func _ready():
 	call_deferred("setup")
-	preload("res://Scenes/music_player.tscn") ##
+	#preload("res://Scenes/music_player.tscn") ##
 	if volume_layers == null:
 		print("No volume layer node set")
 		
@@ -235,7 +235,7 @@ func _physics_process(delta):
 	if moving and enable_collision_detection:
 		if check_collision():
 			print("Collision detected! Snapping back to start position")
-			get_tree().get_root().get_node("../Audio/Box col sound").play() ##
+			#get_tree().get_root().get_node("../Audio/Box col sound").play() ##
 			current_box.position = start_position
 			moving = false
 		else:

@@ -10,7 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if diagetic_music >= 2:#Toggle switch.
 		diagetic_music = 0#Toggle switch.
-	if diagetic_music != change_check: #If there is an order to change music
+	#if diagetic_music != change_check: #If there is an order to change music
 		change_check = diagetic_music
 		if diagetic_music == 1: #If music is set to Diagetic mode
 			get_node("Non_diagetic").stop() #Stop previously playing music
