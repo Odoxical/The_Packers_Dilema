@@ -12,7 +12,7 @@ config_version=5
 
 config/name="The Packers Dilemma"
 run/main_scene="uid://dq3rfb8hmgybx"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 
 [autoload]
 

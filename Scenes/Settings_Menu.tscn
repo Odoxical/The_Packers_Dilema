@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://by50khmkxidsq"]
+[gd_scene load_steps=3 format=3 uid="uid://by50khmkxidsq"]
 
 [ext_resource type="Script" uid="uid://c1vaybu1206st" path="res://Scenes/Godot Code/settings_menu.gd" id="1_0elue"]
+[ext_resource type="Texture2D" uid="uid://dnjkohdg6vccr" path="res://Scenes/Screenshot 2025-10-07 092457.png" id="2_c2hp5"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0elue")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(550.25, 334.5)
+scale = Vector2(1.27332, 1.603211)
+texture = ExtResource("2_c2hp5")
 
 [node name="MainMenu" type="Button" parent="."]
 offset_top = 616.0
@@ -13,21 +19,25 @@ text = "Go Back to Main Menu"
 
 [node name="Buttonsize" type="HSlider" parent="."]
 visibility_layer = 2
-offset_left = 944.0
-offset_top = 56.0
-offset_right = 1112.0
-offset_bottom = 72.0
-max_value = 5.0
-tick_count = 10
+offset_left = 326.0
+offset_top = 603.0
+offset_right = 788.0
+offset_bottom = 657.0
+max_value = 10.0
+value = 5.0
+rounded = true
+tick_count = 20
 ticks_on_borders = true
+ticks_position = 3
 
 [node name="Slider Label size" type="TextEdit" parent="Buttonsize"]
 layout_mode = 0
-offset_left = -16.0
-offset_top = -48.0
-offset_right = 200.0
-offset_bottom = -8.0
-text = "Slider Visability button size"
+offset_left = 198.0
+offset_top = -29.0
+offset_right = 268.0
+offset_bottom = 11.0
+text = "Volume"
+editable = false
 
 [node name="SliderVisibility" type="Button" parent="."]
 offset_top = 8.0
@@ -35,39 +45,14 @@ offset_right = 126.0
 offset_bottom = 72.0
 text = "Slider Visability"
 
-[node name="Main text" type="TextEdit" parent="."]
-offset_left = 448.0
-offset_top = 248.0
-offset_right = 1024.0
-offset_bottom = 448.0
-text = "This area is under coding"
-scroll_smooth = true
-
-[node name="Main Text Y" type="VSlider" parent="."]
-offset_left = 128.0
-offset_top = 256.0
-offset_right = 176.0
-offset_bottom = 440.0
-tick_count = 15
-ticks_on_borders = true
-
-[node name="TextEdit" type="TextEdit" parent="."]
-offset_left = 88.0
-offset_top = 192.0
-offset_right = 232.0
-offset_bottom = 256.0
-text = "Under Coding Y
-Value Slider"
-
 [node name="Music" type="Button" parent="."]
-offset_left = 476.0
-offset_top = 61.0
-offset_right = 602.0
-offset_bottom = 120.0
+offset_left = 715.0
+offset_top = 11.0
+offset_right = 1091.0
+offset_bottom = 179.0
 text = "Make Music Non-diagetic"
 
 [connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="drag_ended" from="Buttonsize" to="." method="_on_buttonsize_drag_ended"]
 [connection signal="pressed" from="SliderVisibility" to="." method="_on_slider_visibility_pressed"]
-[connection signal="drag_started" from="Main Text Y" to="." method="_on_font_size_slider_drag_started"]
 [connection signal="pressed" from="Music" to="." method="_on_music_pressed"]

@@ -180,8 +180,8 @@ func _process(delta):
 	if Input.is_action_just_pressed("Send out"):
 		check_volume()
 		print("SEND OUT")
-		##var global_variables.space_filled = free_space - space_available
-		##global_variables.free_space
+		GlobalVariables.space_filled = free_space - space_available
+		GlobalVariables.free_space
 		get_tree().change_scene_to_file("res://Ui/Clock Out Screen.tscn")
 	
 	if Input.is_action_just_pressed("Stop Box Moving"):

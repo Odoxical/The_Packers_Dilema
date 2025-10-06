@@ -1,5 +1,4 @@
 extends Node
-var music = 1
 
 
 func _on_settings_pressed() -> void:
