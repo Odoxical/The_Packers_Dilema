@@ -36,7 +36,8 @@ offset_right = 816.0
 offset_bottom = 271.0
 theme = ExtResource("2_4k8qc")
 theme_override_font_sizes/font_size = 30
-placeholder_text = "Time Taken = null"
+text = "Wasted Space = "
+placeholder_text = "Wasted Space = null"
 script = ExtResource("3_kxc6g")
 
 [node name="Clock out text" type="TextEdit" parent="."]

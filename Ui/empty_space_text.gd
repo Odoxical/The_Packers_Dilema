@@ -4,7 +4,8 @@ extends TextEdit
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	get_node("/root/Main_Game/")
+	load("res://Scenes/Main_Game.tscn")
+	text
 	pass
 
 
