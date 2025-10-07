@@ -17,7 +17,7 @@ config/features=PackedStringArray("4.5", "Forward Plus")
 [autoload]
 
 GlobalVariables="*res://Scenes/Godot Code/global_variables.gd"
-MusicPlayer="*res://Scenes/music_player.gd"
+MusicPlayer="*res://Scenes/Godot Code/music_player.gd"
 
 [global_group]
 

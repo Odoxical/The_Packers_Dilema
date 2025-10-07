@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cn1y0qvpbi0hx"]
 
-[ext_resource type="Script" uid="uid://cbwm84ss0x2sc" path="res://Scenes/box_detector.gd" id="1_12pad"]
+[ext_resource type="Script" uid="uid://cbwm84ss0x2sc" path="res://Scenes/Godot Code/box_detector.gd" id="1_12pad"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6quq6"]
 
