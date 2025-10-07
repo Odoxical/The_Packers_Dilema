@@ -40,5 +40,3 @@ volume_db = -10.0
 [node name="Diagetic" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamPlaylist_xffsr")
 autoplay = true
-
-[connection signal="finished" from="Diagetic" to="Diagetic" method="_on_finished"]
