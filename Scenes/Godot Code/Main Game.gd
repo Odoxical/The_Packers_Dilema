@@ -17,8 +17,6 @@ var direction = Vector3.ZERO
 var box_scene = load("res://Scenes/Boxes.tscn")
 var valid_collisions = []
 @export var volume_layers : Node3D
-var space_available = 255
-var free_space = 0
 
 func _ready():
 	call_deferred("setup")
@@ -180,8 +178,8 @@ func _process(delta):
 	if Input.is_action_just_pressed("Send out"):
 		check_volume()
 		print("SEND OUT")
-		GlobalVariables.space_filled = free_space - space_available
-		get_tree().change_scene_to_file("res://Ui/Clock Out Screen.tscn")
+		GlobalVariables.space_filled = GlobalVariables.free_space - volume_layers.find_children("Area3D*").size()
+		get_tree().change_scene_to_file("res://Scenes/Clock Out Screen.tscn")
 	
 	if Input.is_action_just_pressed("Stop Box Moving"):
 		# Instantiate the boxes scene (just to access its children)
@@ -249,9 +247,9 @@ func _physics_process(delta):
 func check_volume():
 	var volumes = volume_layers.find_children("Area3D*")
 	print(volumes)
-##	var GlobalVariables.free_space = volumes.size()
+	GlobalVariables.free_space = volumes.size()
 	for volume : Area3D in volumes:
 		if volume.get_overlapping_areas().size() > 0:
 			GlobalVariables.free_space -=1
-	print(GlobalVariables.free_space)
+	print(GlobalVariables.free_space) #debuging code
 			

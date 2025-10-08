@@ -13,32 +13,35 @@ scale = Vector2(2.462, 2.462)
 texture = ExtResource("1_kxc6g")
 
 [node name="Score Text" type="TextEdit" parent="."]
-offset_left = 448.0
-offset_top = 360.0
-offset_right = 728.0
-offset_bottom = 431.0
+offset_left = 312.0
+offset_top = 461.0
+offset_right = 847.0
+offset_bottom = 533.0
 theme = ExtResource("2_4k8qc")
 theme_override_font_sizes/font_size = 30
 placeholder_text = "Score = null"
 editable = false
 
 [node name="Crates shipped text" type="TextEdit" parent="."]
-offset_left = 328.0
-offset_top = 280.0
-offset_right = 816.0
-offset_bottom = 351.0
+offset_left = 318.0
+offset_top = 396.0
+offset_right = 858.0
+offset_bottom = 457.0
 theme = ExtResource("2_4k8qc")
 theme_override_font_sizes/font_size = 30
 placeholder_text = "Filled space = null"
+editable = false
 
 [node name="Empty Space text" type="TextEdit" parent="."]
 offset_left = 328.0
 offset_top = 200.0
-offset_right = 816.0
-offset_bottom = 271.0
+offset_right = 849.0
+offset_bottom = 387.0
 theme = ExtResource("2_4k8qc")
 theme_override_font_sizes/font_size = 30
 placeholder_text = "Time Taken = null"
+editable = false
+wrap_mode = 1
 
 [node name="Clock out text" type="TextEdit" parent="."]
 offset_left = 426.0
@@ -46,7 +49,9 @@ offset_top = 120.0
 offset_right = 735.0
 offset_bottom = 191.0
 theme = ExtResource("2_4k8qc")
+theme_override_font_sizes/font_size = 50
 text = "Clock out"
+editable = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 324)
