@@ -71,17 +71,9 @@ func snap_to_nearest_axis(vector: Vector3) -> Vector3:
 func check_collision() -> bool:
 	# Check if current_area overlaps with any other areas
 	if current_area and current_area.has_overlapping_areas():
-		
 		var overlapping_areas = current_area.get_overlapping_areas()
-		
-		# Filter out self-overlapping (if the same box has multiple areas)
-		var valid_collisions = []
 		for area in overlapping_areas:
-			if area != current_area and get_parent().is_in_group("No Colide"): 
-				print("No collision necessary")
-				return false
-			# Make sure we're not detecting collision with our own area or parent
-			elif area != current_area and area.get_parent() != current_box:
+			if area != current_area and area.get_parent() != current_box:
 				valid_collisions.append(area)
 		
 		if valid_collisions.size() > 0:
@@ -194,7 +186,7 @@ func _process(delta):
 			var selected_box = box_templates[randi() % box_templates.size()]
 			# Add to main scene
 			get_tree().get_root().add_child(selected_box)
-			selected_box.global_position = Vector3(0, 2, -2)
+			selected_box.global_position = Vector3(0, 3, 0) ##
 			selected_box.reparent($"../Box Container")
 			
 			# Debug: Print the structure of the spawned box
