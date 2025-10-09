@@ -2,7 +2,7 @@ extends Node
 var space_filled = 0
 var time_taken = 0
 var Diagetic_music = 1
-var free_space = 255
+var free_space = 225
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

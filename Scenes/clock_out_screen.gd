@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready():
-	var score = GlobalVariables.space_filled - GlobalVariables.free_space * 2
+	var score = GlobalVariables.space_filled - GlobalVariables.free_space * 1.2
 	if score > 0:
 		$"Score Text".text = "You have been payed $" + str(score)
 	else:

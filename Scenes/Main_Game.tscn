@@ -1290,7 +1290,6 @@ size = Vector3(7, 7, 1)
 transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, -0.293756, 1.05452, -21.6606)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Warehouse"]
-root_node = NodePath("")
 libraries = {
 &"": SubResource("AnimationLibrary_tt2q3")
 }
@@ -2102,7 +2101,7 @@ mesh = SubResource("ArrayMesh_5audo")
 skeleton = NodePath("")
 
 [node name="Trailer" type="MeshInstance3D" parent="Truck"]
-transform = Transform3D(3.1705562e-07, -1, 0, 1.01, 3.1391647e-07, 0, 0, 0, 1.01, 0, 0, 0)
+transform = Transform3D(3.217644e-07, -1, 0, 1.025, 3.1391647e-07, 0, 0, 0, 1.025, 0, 0, 0)
 mesh = SubResource("ArrayMesh_sh1jk")
 skeleton = NodePath("")
 
@@ -2112,12 +2111,12 @@ mesh = SubResource("ArrayMesh_2a0aa")
 skeleton = NodePath("")
 
 [node name="Left Door" type="MeshInstance3D" parent="Truck"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.5, 1.98281, -2.42928)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.5, 1.98281, -2.5032794)
 mesh = SubResource("ArrayMesh_p5mft")
 skeleton = NodePath("")
 
 [node name="Right Door" type="MeshInstance3D" parent="Truck"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.5, 1.99258, 2.43955)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.5, 1.9925799, 2.518822)
 mesh = SubResource("ArrayMesh_7t85o")
 skeleton = NodePath("")
 
