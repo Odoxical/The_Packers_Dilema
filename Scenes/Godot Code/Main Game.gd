@@ -243,5 +243,7 @@ func check_volume():
 	for volume : Area3D in volumes:
 		if volume.get_overlapping_areas().size() > 0:
 			GlobalVariables.free_space -=1
+			GlobalVariables.space_filled +=1
+	return GlobalVariables.free_space
 	print(GlobalVariables.free_space) #debuging code
 			

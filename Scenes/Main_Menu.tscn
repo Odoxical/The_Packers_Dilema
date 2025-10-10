@@ -34,14 +34,16 @@ scale = Vector2(0.25, 0.25)
 offset_left = -577.0
 offset_top = -323.0
 offset_right = -344.0
-offset_bottom = -169.0
+offset_bottom = -136.0
 theme = ExtResource("4_2hiyy")
 theme_override_font_sizes/font_size = 16
 text = "Controls
 W to move Box forward
+S to move box back
 A to move left
 D to move right
-Z, X, and C to rotate"
+Z, X, and C to rotate
+H to end"
 
 [node name="Config Box" type="Sprite2D" parent="."]
 position = Vector2(24, 50)
